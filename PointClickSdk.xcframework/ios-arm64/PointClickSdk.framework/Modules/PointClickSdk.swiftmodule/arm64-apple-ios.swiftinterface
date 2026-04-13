@@ -1,0 +1,76 @@
+// swift-interface-format-version: 1.0
+// swift-compiler-version: Apple Swift version 6.3 effective-5.10 (swiftlang-6.3.0.123.5 clang-2100.0.123.102)
+// swift-module-flags: -target arm64-apple-ios15.0 -enable-objc-interop -enable-library-evolution -swift-version 5 -O -enable-experimental-feature DebugDescriptionMacro -module-name PointClickSdk -package-name pointclick_sdk_ios
+// swift-module-flags-ignorable: -no-verify-emitted-module-interface -formal-cxx-interoperability-mode=off -interface-compiler-version 6.3
+import Foundation
+import Foundation/*.Bundle*/
+import Foundation/*.ProcessInfo*/
+import Foundation/*.URL*/
+import ObjectiveC
+import Swift
+import SwiftUI
+import UIKit
+import WebKit
+import _Concurrency
+import _StringProcessing
+import _SwiftConcurrencyShims
+@objc(PCError) public enum PointClickError : Swift.Int, Swift.Error {
+  case notInitialized
+  case networkError
+  case invalidConfig
+  public init?(rawValue: Swift.Int)
+  public typealias RawValue = Swift.Int
+  public static var _nsErrorDomain: Swift.String {
+    get
+  }
+  public var rawValue: Swift.Int {
+    get
+  }
+}
+@_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers @objc(PCPointClick) final public class PointClick : ObjectiveC.NSObject {
+  @objc public static let shared: PointClickSdk.PointClick
+  @objc final public var isInitialized: Swift.Bool {
+    get
+  }
+  @objc final public var overrideURL: Foundation.URL?
+  final public func initialize(appId: Swift.String, userId: Swift.String, gender: PointClickSdk.PointClickUserGender? = nil, birthYear: Swift.Int? = nil)
+  @objc(initializeWithAppId:userId:) final public func objc_initialize(appId: Swift.String, userId: Swift.String)
+  @objc(initializeWithAppId:userId:gender:birthYear:) final public func objc_initialize(appId: Swift.String, userId: Swift.String, gender: PointClickSdk.PointClickUserGender, birthYear: Swift.Int)
+  @objc deinit
+}
+@_inheritsConvenienceInitializers @objc(PCPointClickUI) final public class PointClickUI : ObjectiveC.NSObject {
+  @objc override dynamic public init()
+  @objc final public func show(on viewController: UIKit.UIViewController)
+  @objc final public func createViewController() -> UIKit.UIViewController?
+  @objc final public func handleBackNavigation()
+  @objc deinit
+}
+@objc(PCUserGender) public enum PointClickUserGender : Swift.Int {
+  case male
+  case female
+  public init?(rawValue: Swift.Int)
+  public typealias RawValue = Swift.Int
+  public var rawValue: Swift.Int {
+    get
+  }
+}
+@available(iOS 15.0, *)
+@_Concurrency.MainActor @preconcurrency public struct PointClickView : SwiftUI.UIViewControllerRepresentable {
+  @_Concurrency.MainActor @preconcurrency public init()
+  @_Concurrency.MainActor @preconcurrency public func makeUIViewController(context: PointClickSdk.PointClickView.Context) -> UIKit.UIViewController
+  @_Concurrency.MainActor @preconcurrency public func updateUIViewController(_ uiViewController: UIKit.UIViewController, context: PointClickSdk.PointClickView.Context)
+  @available(iOS 15.0, *)
+  public typealias Body = Swift.Never
+  @available(iOS 15.0, *)
+  public typealias Coordinator = Swift.Void
+  @available(iOS 15.0, *)
+  public typealias UIViewControllerType = UIKit.UIViewController
+}
+extension PointClickSdk.PointClickError : Swift.Equatable {}
+extension PointClickSdk.PointClickError : Swift.Hashable {}
+extension PointClickSdk.PointClickError : Swift.RawRepresentable {}
+extension PointClickSdk.PointClickUserGender : Swift.Equatable {}
+extension PointClickSdk.PointClickUserGender : Swift.Hashable {}
+extension PointClickSdk.PointClickUserGender : Swift.RawRepresentable {}
+@available(iOS 15.0, *)
+extension PointClickSdk.PointClickView : Swift.Sendable {}

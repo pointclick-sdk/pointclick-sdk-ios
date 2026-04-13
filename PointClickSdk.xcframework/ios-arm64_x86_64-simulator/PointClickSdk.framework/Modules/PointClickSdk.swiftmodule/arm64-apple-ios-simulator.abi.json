@@ -1,0 +1,1848 @@
+{
+  "ABIRoot": {
+    "kind": "Root",
+    "name": "PointClickSdk",
+    "printedName": "PointClickSdk",
+    "children": [
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "PointClickSdk"
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "PointClickSdk"
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "PointClickSdk"
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "PointClickSdk"
+      },
+      {
+        "kind": "Import",
+        "name": "WebKit",
+        "printedName": "WebKit",
+        "declKind": "Import",
+        "moduleName": "PointClickSdk"
+      },
+      {
+        "kind": "Import",
+        "name": "UIKit",
+        "printedName": "UIKit",
+        "declKind": "Import",
+        "moduleName": "PointClickSdk"
+      },
+      {
+        "kind": "Import",
+        "name": "ObjectiveC",
+        "printedName": "ObjectiveC",
+        "declKind": "Import",
+        "moduleName": "PointClickSdk"
+      },
+      {
+        "kind": "Import",
+        "name": "UIKit",
+        "printedName": "UIKit",
+        "declKind": "Import",
+        "moduleName": "PointClickSdk"
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "PointClickSdk"
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "PointClickSdk"
+      },
+      {
+        "kind": "Import",
+        "name": "UIKit",
+        "printedName": "UIKit",
+        "declKind": "Import",
+        "moduleName": "PointClickSdk"
+      },
+      {
+        "kind": "Import",
+        "name": "WebKit",
+        "printedName": "WebKit",
+        "declKind": "Import",
+        "moduleName": "PointClickSdk"
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "PointClickSdk"
+      },
+      {
+        "kind": "Import",
+        "name": "ObjectiveC",
+        "printedName": "ObjectiveC",
+        "declKind": "Import",
+        "moduleName": "PointClickSdk"
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "PointClickSdk"
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "PointClickSdk"
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "PointClickError",
+        "printedName": "PointClickError",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "notInitialized",
+            "printedName": "notInitialized",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(PointClickSdk.PointClickError.Type) -> PointClickSdk.PointClickError",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "PointClickError",
+                    "printedName": "PointClickSdk.PointClickError",
+                    "usr": "c:@M@PointClickSdk@E@PCError"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "PointClickSdk.PointClickError.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "PointClickError",
+                        "printedName": "PointClickSdk.PointClickError",
+                        "usr": "c:@M@PointClickSdk@E@PCError"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "c:@M@PointClickSdk@E@PCError@PCErrorNotInitialized",
+            "mangledName": "$s13PointClickSdk0aB5ErrorO14notInitializedyA2CmF",
+            "moduleName": "PointClickSdk",
+            "declAttributes": [
+              "RawDocComment",
+              "ObjC"
+            ],
+            "fixedbinaryorder": 0
+          },
+          {
+            "kind": "Var",
+            "name": "networkError",
+            "printedName": "networkError",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(PointClickSdk.PointClickError.Type) -> PointClickSdk.PointClickError",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "PointClickError",
+                    "printedName": "PointClickSdk.PointClickError",
+                    "usr": "c:@M@PointClickSdk@E@PCError"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "PointClickSdk.PointClickError.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "PointClickError",
+                        "printedName": "PointClickSdk.PointClickError",
+                        "usr": "c:@M@PointClickSdk@E@PCError"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "c:@M@PointClickSdk@E@PCError@PCErrorNetworkError",
+            "mangledName": "$s13PointClickSdk0aB5ErrorO07networkD0yA2CmF",
+            "moduleName": "PointClickSdk",
+            "declAttributes": [
+              "RawDocComment",
+              "ObjC"
+            ],
+            "fixedbinaryorder": 1
+          },
+          {
+            "kind": "Var",
+            "name": "invalidConfig",
+            "printedName": "invalidConfig",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(PointClickSdk.PointClickError.Type) -> PointClickSdk.PointClickError",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "PointClickError",
+                    "printedName": "PointClickSdk.PointClickError",
+                    "usr": "c:@M@PointClickSdk@E@PCError"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "PointClickSdk.PointClickError.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "PointClickError",
+                        "printedName": "PointClickSdk.PointClickError",
+                        "usr": "c:@M@PointClickSdk@E@PCError"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "c:@M@PointClickSdk@E@PCError@PCErrorInvalidConfig",
+            "mangledName": "$s13PointClickSdk0aB5ErrorO13invalidConfigyA2CmF",
+            "moduleName": "PointClickSdk",
+            "declAttributes": [
+              "RawDocComment",
+              "ObjC"
+            ],
+            "fixedbinaryorder": 2
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init(rawValue:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "PointClickSdk.PointClickError?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "PointClickError",
+                    "printedName": "PointClickSdk.PointClickError",
+                    "usr": "c:@M@PointClickSdk@E@PCError"
+                  }
+                ],
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Int",
+                "printedName": "Swift.Int",
+                "usr": "s:Si"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "s:13PointClickSdk0aB5ErrorO8rawValueACSgSi_tcfc",
+            "mangledName": "$s13PointClickSdk0aB5ErrorO8rawValueACSgSi_tcfc",
+            "moduleName": "PointClickSdk",
+            "implicit": true,
+            "init_kind": "Designated"
+          },
+          {
+            "kind": "Var",
+            "name": "rawValue",
+            "printedName": "rawValue",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Int",
+                "printedName": "Swift.Int",
+                "usr": "s:Si"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:13PointClickSdk0aB5ErrorO8rawValueSivp",
+            "mangledName": "$s13PointClickSdk0aB5ErrorO8rawValueSivp",
+            "moduleName": "PointClickSdk",
+            "implicit": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Int",
+                    "printedName": "Swift.Int",
+                    "usr": "s:Si"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:13PointClickSdk0aB5ErrorO8rawValueSivg",
+                "mangledName": "$s13PointClickSdk0aB5ErrorO8rawValueSivg",
+                "moduleName": "PointClickSdk",
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "_nsErrorDomain",
+            "printedName": "_nsErrorDomain",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:13PointClickSdk0aB5ErrorO03_nsD6DomainSSvpZ",
+            "mangledName": "$s13PointClickSdk0aB5ErrorO03_nsD6DomainSSvpZ",
+            "moduleName": "PointClickSdk",
+            "static": true,
+            "implicit": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:13PointClickSdk0aB5ErrorO03_nsD6DomainSSvgZ",
+                "mangledName": "$s13PointClickSdk0aB5ErrorO03_nsD6DomainSSvgZ",
+                "moduleName": "PointClickSdk",
+                "static": true,
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          }
+        ],
+        "declKind": "Enum",
+        "usr": "c:@M@PointClickSdk@E@PCError",
+        "mangledName": "$s13PointClickSdk0aB5ErrorO",
+        "moduleName": "PointClickSdk",
+        "objc_name": "PCError",
+        "declAttributes": [
+          "AccessControl",
+          "ObjC",
+          "RawDocComment"
+        ],
+        "enumRawTypeName": "Int",
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Hashable",
+            "printedName": "Hashable",
+            "usr": "s:SH",
+            "mangledName": "$sSH"
+          },
+          {
+            "kind": "Conformance",
+            "name": "RawRepresentable",
+            "printedName": "RawRepresentable",
+            "children": [
+              {
+                "kind": "TypeWitness",
+                "name": "RawValue",
+                "printedName": "RawValue",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Int",
+                    "printedName": "Swift.Int",
+                    "usr": "s:Si"
+                  }
+                ]
+              }
+            ],
+            "usr": "s:SY",
+            "mangledName": "$sSY"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Error",
+            "printedName": "Error",
+            "usr": "s:s5ErrorP",
+            "mangledName": "$ss5ErrorP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_BridgedNSError",
+            "printedName": "_BridgedNSError",
+            "usr": "s:10Foundation15_BridgedNSErrorP",
+            "mangledName": "$s10Foundation15_BridgedNSErrorP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Sendable",
+            "printedName": "Sendable",
+            "usr": "s:s8SendableP",
+            "mangledName": "$ss8SendableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_ObjectiveCBridgeableError",
+            "printedName": "_ObjectiveCBridgeableError",
+            "usr": "s:10Foundation26_ObjectiveCBridgeableErrorP",
+            "mangledName": "$s10Foundation26_ObjectiveCBridgeableErrorP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "SendableMetatype",
+            "printedName": "SendableMetatype",
+            "usr": "s:s16SendableMetatypeP",
+            "mangledName": "$ss16SendableMetatypeP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Equatable",
+            "printedName": "Equatable",
+            "usr": "s:SQ",
+            "mangledName": "$sSQ"
+          }
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "PointClickSdk"
+      },
+      {
+        "kind": "Import",
+        "name": "DoohubDeviceInfo",
+        "printedName": "DoohubDeviceInfo",
+        "declKind": "Import",
+        "moduleName": "PointClickSdk",
+        "declAttributes": [
+          "AccessControl"
+        ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "PointClick",
+        "printedName": "PointClick",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "shared",
+            "printedName": "shared",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "PointClick",
+                "printedName": "PointClickSdk.PointClick",
+                "usr": "c:@M@PointClickSdk@objc(cs)PCPointClick"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "c:@M@PointClickSdk@objc(cs)PCPointClick(cpy)shared",
+            "mangledName": "$s13PointClickSdk0aB0C6sharedACvpZ",
+            "moduleName": "PointClickSdk",
+            "static": true,
+            "declAttributes": [
+              "HasInitialValue",
+              "Final",
+              "HasStorage",
+              "AccessControl",
+              "ObjC",
+              "RawDocComment"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "PointClick",
+                    "printedName": "PointClickSdk.PointClick",
+                    "usr": "c:@M@PointClickSdk@objc(cs)PCPointClick"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@PointClickSdk@objc(cs)PCPointClick(cm)shared",
+                "mangledName": "$s13PointClickSdk0aB0C6sharedACvgZ",
+                "moduleName": "PointClickSdk",
+                "static": true,
+                "implicit": true,
+                "declAttributes": [
+                  "Final",
+                  "ObjC"
+                ],
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "isInitialized",
+            "printedName": "isInitialized",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "c:@M@PointClickSdk@objc(cs)PCPointClick(py)isInitialized",
+            "mangledName": "$s13PointClickSdk0aB0C13isInitializedSbvp",
+            "moduleName": "PointClickSdk",
+            "declAttributes": [
+              "HasInitialValue",
+              "Final",
+              "HasStorage",
+              "SetterAccess",
+              "AccessControl",
+              "ObjC",
+              "RawDocComment"
+            ],
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Bool",
+                    "printedName": "Swift.Bool",
+                    "usr": "s:Sb"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@PointClickSdk@objc(cs)PCPointClick(im)isInitialized",
+                "mangledName": "$s13PointClickSdk0aB0C13isInitializedSbvg",
+                "moduleName": "PointClickSdk",
+                "implicit": true,
+                "declAttributes": [
+                  "Final",
+                  "ObjC"
+                ],
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "overrideURL",
+            "printedName": "overrideURL",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Foundation.URL?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "URL",
+                    "printedName": "Foundation.URL",
+                    "usr": "s:10Foundation3URLV"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "c:@M@PointClickSdk@objc(cs)PCPointClick(py)overrideURL",
+            "mangledName": "$s13PointClickSdk0aB0C11overrideURL10Foundation0E0VSgvp",
+            "moduleName": "PointClickSdk",
+            "declAttributes": [
+              "HasInitialValue",
+              "Final",
+              "HasStorage",
+              "AccessControl",
+              "ObjC",
+              "RawDocComment"
+            ],
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Foundation.URL?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "URL",
+                        "printedName": "Foundation.URL",
+                        "usr": "s:10Foundation3URLV"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@PointClickSdk@objc(cs)PCPointClick(im)overrideURL",
+                "mangledName": "$s13PointClickSdk0aB0C11overrideURL10Foundation0E0VSgvg",
+                "moduleName": "PointClickSdk",
+                "implicit": true,
+                "declAttributes": [
+                  "Final",
+                  "ObjC"
+                ],
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Foundation.URL?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "URL",
+                        "printedName": "Foundation.URL",
+                        "usr": "s:10Foundation3URLV"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@PointClickSdk@objc(cs)PCPointClick(im)setOverrideURL:",
+                "mangledName": "$s13PointClickSdk0aB0C11overrideURL10Foundation0E0VSgvs",
+                "moduleName": "PointClickSdk",
+                "implicit": true,
+                "declAttributes": [
+                  "Final",
+                  "ObjC"
+                ],
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:13PointClickSdk0aB0C11overrideURL10Foundation0E0VSgvM",
+                "mangledName": "$s13PointClickSdk0aB0C11overrideURL10Foundation0E0VSgvM",
+                "moduleName": "PointClickSdk",
+                "implicit": true,
+                "declAttributes": [
+                  "Final"
+                ],
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
+            "kind": "Function",
+            "name": "initialize",
+            "printedName": "initialize(appId:userId:gender:birthYear:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "PointClickSdk.PointClickUserGender?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "PointClickUserGender",
+                    "printedName": "PointClickSdk.PointClickUserGender",
+                    "usr": "c:@M@PointClickSdk@E@PCUserGender"
+                  }
+                ],
+                "hasDefaultArg": true,
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.Int?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Int",
+                    "printedName": "Swift.Int",
+                    "usr": "s:Si"
+                  }
+                ],
+                "hasDefaultArg": true,
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:13PointClickSdk0aB0C10initialize5appId04userF06gender9birthYearySS_SSAA0aB10UserGenderOSgSiSgtF",
+            "mangledName": "$s13PointClickSdk0aB0C10initialize5appId04userF06gender9birthYearySS_SSAA0aB10UserGenderOSgSiSgtF",
+            "moduleName": "PointClickSdk",
+            "declAttributes": [
+              "Final",
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "objc_initialize",
+            "printedName": "objc_initialize(appId:userId:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@PointClickSdk@objc(cs)PCPointClick(im)initializeWithAppId:userId:",
+            "mangledName": "$s13PointClickSdk0aB0C15objc_initialize5appId04userG0ySS_SStF",
+            "moduleName": "PointClickSdk",
+            "objc_name": "initializeWithAppId:userId:",
+            "declAttributes": [
+              "Final",
+              "AccessControl",
+              "ObjC",
+              "RawDocComment"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "objc_initialize",
+            "printedName": "objc_initialize(appId:userId:gender:birthYear:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "PointClickUserGender",
+                "printedName": "PointClickSdk.PointClickUserGender",
+                "usr": "c:@M@PointClickSdk@E@PCUserGender"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Int",
+                "printedName": "Swift.Int",
+                "usr": "s:Si"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@PointClickSdk@objc(cs)PCPointClick(im)initializeWithAppId:userId:gender:birthYear:",
+            "mangledName": "$s13PointClickSdk0aB0C15objc_initialize5appId04userG06gender9birthYearySS_SSAA0aB10UserGenderOSitF",
+            "moduleName": "PointClickSdk",
+            "objc_name": "initializeWithAppId:userId:gender:birthYear:",
+            "declAttributes": [
+              "Final",
+              "AccessControl",
+              "ObjC"
+            ],
+            "funcSelfKind": "NonMutating"
+          }
+        ],
+        "declKind": "Class",
+        "usr": "c:@M@PointClickSdk@objc(cs)PCPointClick",
+        "mangledName": "$s13PointClickSdk0aB0C",
+        "moduleName": "PointClickSdk",
+        "objc_name": "PCPointClick",
+        "declAttributes": [
+          "Final",
+          "AccessControl",
+          "ObjC",
+          "RawDocComment"
+        ],
+        "superclassUsr": "c:objc(cs)NSObject",
+        "hasMissingDesignatedInitializers": true,
+        "inheritsConvenienceInitializers": true,
+        "superclassNames": [
+          "ObjectiveC.NSObject"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "_KeyValueCodingAndObserving",
+            "printedName": "_KeyValueCodingAndObserving",
+            "usr": "s:10Foundation27_KeyValueCodingAndObservingP",
+            "mangledName": "$s10Foundation27_KeyValueCodingAndObservingP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_KeyValueCodingAndObservingPublishing",
+            "printedName": "_KeyValueCodingAndObservingPublishing",
+            "usr": "s:10Foundation37_KeyValueCodingAndObservingPublishingP",
+            "mangledName": "$s10Foundation37_KeyValueCodingAndObservingPublishingP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CVarArg",
+            "printedName": "CVarArg",
+            "usr": "s:s7CVarArgP",
+            "mangledName": "$ss7CVarArgP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomDebugStringConvertible",
+            "printedName": "CustomDebugStringConvertible",
+            "usr": "s:s28CustomDebugStringConvertibleP",
+            "mangledName": "$ss28CustomDebugStringConvertibleP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomStringConvertible",
+            "printedName": "CustomStringConvertible",
+            "usr": "s:s23CustomStringConvertibleP",
+            "mangledName": "$ss23CustomStringConvertibleP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Equatable",
+            "printedName": "Equatable",
+            "usr": "s:SQ",
+            "mangledName": "$sSQ"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Hashable",
+            "printedName": "Hashable",
+            "usr": "s:SH",
+            "mangledName": "$sSH"
+          }
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "UIKit",
+        "printedName": "UIKit",
+        "declKind": "Import",
+        "moduleName": "PointClickSdk"
+      },
+      {
+        "kind": "Import",
+        "name": "WebKit",
+        "printedName": "WebKit",
+        "declKind": "Import",
+        "moduleName": "PointClickSdk"
+      },
+      {
+        "kind": "Import",
+        "name": "DoohubDeviceInfo",
+        "printedName": "DoohubDeviceInfo",
+        "declKind": "Import",
+        "moduleName": "PointClickSdk",
+        "declAttributes": [
+          "AccessControl"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "DoohubWebView",
+        "printedName": "DoohubWebView",
+        "declKind": "Import",
+        "moduleName": "PointClickSdk",
+        "declAttributes": [
+          "AccessControl"
+        ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "PointClickUI",
+        "printedName": "PointClickUI",
+        "children": [
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "PointClickUI",
+                "printedName": "PointClickSdk.PointClickUI",
+                "usr": "c:@M@PointClickSdk@objc(cs)PCPointClickUI"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "c:@M@PointClickSdk@objc(cs)PCPointClickUI(im)init",
+            "mangledName": "$s13PointClickSdk0aB2UICACycfc",
+            "moduleName": "PointClickSdk",
+            "overriding": true,
+            "objc_name": "init",
+            "declAttributes": [
+              "Dynamic",
+              "ObjC",
+              "Override",
+              "AccessControl"
+            ],
+            "init_kind": "Designated"
+          },
+          {
+            "kind": "Function",
+            "name": "show",
+            "printedName": "show(on:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "UIViewController",
+                "printedName": "UIKit.UIViewController",
+                "usr": "c:objc(cs)UIViewController"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@PointClickSdk@objc(cs)PCPointClickUI(im)showOn:",
+            "mangledName": "$s13PointClickSdk0aB2UIC4show2onySo16UIViewControllerC_tF",
+            "moduleName": "PointClickSdk",
+            "objc_name": "showOn:",
+            "declAttributes": [
+              "Final",
+              "AccessControl",
+              "ObjC",
+              "RawDocComment"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "createViewController",
+            "printedName": "createViewController()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "UIKit.UIViewController?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "UIViewController",
+                    "printedName": "UIKit.UIViewController",
+                    "usr": "c:objc(cs)UIViewController"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@PointClickSdk@objc(cs)PCPointClickUI(im)createViewController",
+            "mangledName": "$s13PointClickSdk0aB2UIC20createViewControllerSo06UIViewG0CSgyF",
+            "moduleName": "PointClickSdk",
+            "declAttributes": [
+              "Final",
+              "AccessControl",
+              "ObjC",
+              "RawDocComment"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "handleBackNavigation",
+            "printedName": "handleBackNavigation()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@PointClickSdk@objc(cs)PCPointClickUI(im)handleBackNavigation",
+            "mangledName": "$s13PointClickSdk0aB2UIC20handleBackNavigationyyF",
+            "moduleName": "PointClickSdk",
+            "declAttributes": [
+              "Final",
+              "AccessControl",
+              "ObjC",
+              "RawDocComment"
+            ],
+            "funcSelfKind": "NonMutating"
+          }
+        ],
+        "declKind": "Class",
+        "usr": "c:@M@PointClickSdk@objc(cs)PCPointClickUI",
+        "mangledName": "$s13PointClickSdk0aB2UIC",
+        "moduleName": "PointClickSdk",
+        "objc_name": "PCPointClickUI",
+        "declAttributes": [
+          "Final",
+          "AccessControl",
+          "ObjC",
+          "RawDocComment"
+        ],
+        "superclassUsr": "c:objc(cs)NSObject",
+        "inheritsConvenienceInitializers": true,
+        "superclassNames": [
+          "ObjectiveC.NSObject"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "_KeyValueCodingAndObserving",
+            "printedName": "_KeyValueCodingAndObserving",
+            "usr": "s:10Foundation27_KeyValueCodingAndObservingP",
+            "mangledName": "$s10Foundation27_KeyValueCodingAndObservingP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_KeyValueCodingAndObservingPublishing",
+            "printedName": "_KeyValueCodingAndObservingPublishing",
+            "usr": "s:10Foundation37_KeyValueCodingAndObservingPublishingP",
+            "mangledName": "$s10Foundation37_KeyValueCodingAndObservingPublishingP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CVarArg",
+            "printedName": "CVarArg",
+            "usr": "s:s7CVarArgP",
+            "mangledName": "$ss7CVarArgP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomDebugStringConvertible",
+            "printedName": "CustomDebugStringConvertible",
+            "usr": "s:s28CustomDebugStringConvertibleP",
+            "mangledName": "$ss28CustomDebugStringConvertibleP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomStringConvertible",
+            "printedName": "CustomStringConvertible",
+            "usr": "s:s23CustomStringConvertibleP",
+            "mangledName": "$ss23CustomStringConvertibleP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Equatable",
+            "printedName": "Equatable",
+            "usr": "s:SQ",
+            "mangledName": "$sSQ"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Hashable",
+            "printedName": "Hashable",
+            "usr": "s:SH",
+            "mangledName": "$sSH"
+          }
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "PointClickSdk"
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "PointClickUserGender",
+        "printedName": "PointClickUserGender",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "male",
+            "printedName": "male",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(PointClickSdk.PointClickUserGender.Type) -> PointClickSdk.PointClickUserGender",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "PointClickUserGender",
+                    "printedName": "PointClickSdk.PointClickUserGender",
+                    "usr": "c:@M@PointClickSdk@E@PCUserGender"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "PointClickSdk.PointClickUserGender.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "PointClickUserGender",
+                        "printedName": "PointClickSdk.PointClickUserGender",
+                        "usr": "c:@M@PointClickSdk@E@PCUserGender"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "c:@M@PointClickSdk@E@PCUserGender@PCUserGenderMale",
+            "mangledName": "$s13PointClickSdk0aB10UserGenderO4maleyA2CmF",
+            "moduleName": "PointClickSdk",
+            "declAttributes": [
+              "RawDocComment",
+              "ObjC"
+            ],
+            "fixedbinaryorder": 0
+          },
+          {
+            "kind": "Var",
+            "name": "female",
+            "printedName": "female",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(PointClickSdk.PointClickUserGender.Type) -> PointClickSdk.PointClickUserGender",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "PointClickUserGender",
+                    "printedName": "PointClickSdk.PointClickUserGender",
+                    "usr": "c:@M@PointClickSdk@E@PCUserGender"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "PointClickSdk.PointClickUserGender.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "PointClickUserGender",
+                        "printedName": "PointClickSdk.PointClickUserGender",
+                        "usr": "c:@M@PointClickSdk@E@PCUserGender"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "c:@M@PointClickSdk@E@PCUserGender@PCUserGenderFemale",
+            "mangledName": "$s13PointClickSdk0aB10UserGenderO6femaleyA2CmF",
+            "moduleName": "PointClickSdk",
+            "declAttributes": [
+              "RawDocComment",
+              "ObjC"
+            ],
+            "fixedbinaryorder": 1
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init(rawValue:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "PointClickSdk.PointClickUserGender?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "PointClickUserGender",
+                    "printedName": "PointClickSdk.PointClickUserGender",
+                    "usr": "c:@M@PointClickSdk@E@PCUserGender"
+                  }
+                ],
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Int",
+                "printedName": "Swift.Int",
+                "usr": "s:Si"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "s:13PointClickSdk0aB10UserGenderO8rawValueACSgSi_tcfc",
+            "mangledName": "$s13PointClickSdk0aB10UserGenderO8rawValueACSgSi_tcfc",
+            "moduleName": "PointClickSdk",
+            "implicit": true,
+            "init_kind": "Designated"
+          },
+          {
+            "kind": "Var",
+            "name": "rawValue",
+            "printedName": "rawValue",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Int",
+                "printedName": "Swift.Int",
+                "usr": "s:Si"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:13PointClickSdk0aB10UserGenderO8rawValueSivp",
+            "mangledName": "$s13PointClickSdk0aB10UserGenderO8rawValueSivp",
+            "moduleName": "PointClickSdk",
+            "implicit": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Int",
+                    "printedName": "Swift.Int",
+                    "usr": "s:Si"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:13PointClickSdk0aB10UserGenderO8rawValueSivg",
+                "mangledName": "$s13PointClickSdk0aB10UserGenderO8rawValueSivg",
+                "moduleName": "PointClickSdk",
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          }
+        ],
+        "declKind": "Enum",
+        "usr": "c:@M@PointClickSdk@E@PCUserGender",
+        "mangledName": "$s13PointClickSdk0aB10UserGenderO",
+        "moduleName": "PointClickSdk",
+        "objc_name": "PCUserGender",
+        "declAttributes": [
+          "AccessControl",
+          "ObjC",
+          "RawDocComment"
+        ],
+        "enumRawTypeName": "Int",
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Equatable",
+            "printedName": "Equatable",
+            "usr": "s:SQ",
+            "mangledName": "$sSQ"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Hashable",
+            "printedName": "Hashable",
+            "usr": "s:SH",
+            "mangledName": "$sSH"
+          },
+          {
+            "kind": "Conformance",
+            "name": "RawRepresentable",
+            "printedName": "RawRepresentable",
+            "children": [
+              {
+                "kind": "TypeWitness",
+                "name": "RawValue",
+                "printedName": "RawValue",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Int",
+                    "printedName": "Swift.Int",
+                    "usr": "s:Si"
+                  }
+                ]
+              }
+            ],
+            "usr": "s:SY",
+            "mangledName": "$sSY"
+          }
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "SwiftUI",
+        "printedName": "SwiftUI",
+        "declKind": "Import",
+        "moduleName": "PointClickSdk"
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "PointClickView",
+        "printedName": "PointClickView",
+        "children": [
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "PointClickView",
+                "printedName": "PointClickSdk.PointClickView",
+                "usr": "s:13PointClickSdk0aB4ViewV"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "s:13PointClickSdk0aB4ViewVACycfc",
+            "mangledName": "$s13PointClickSdk0aB4ViewVACycfc",
+            "moduleName": "PointClickSdk",
+            "declAttributes": [
+              "Preconcurrency",
+              "Custom",
+              "AccessControl"
+            ],
+            "init_kind": "Designated"
+          },
+          {
+            "kind": "Function",
+            "name": "makeUIViewController",
+            "printedName": "makeUIViewController(context:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "UIViewController",
+                "printedName": "UIKit.UIViewController",
+                "usr": "c:objc(cs)UIViewController"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "UIViewControllerRepresentableContext",
+                "printedName": "SwiftUI.UIViewControllerRepresentableContext<PointClickSdk.PointClickView>",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "PointClickView",
+                    "printedName": "PointClickSdk.PointClickView",
+                    "usr": "s:13PointClickSdk0aB4ViewV"
+                  }
+                ],
+                "usr": "s:7SwiftUI36UIViewControllerRepresentableContextV"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:13PointClickSdk0aB4ViewV20makeUIViewController7contextSo0fG0C7SwiftUI0fG20RepresentableContextVyACG_tF",
+            "mangledName": "$s13PointClickSdk0aB4ViewV20makeUIViewController7contextSo0fG0C7SwiftUI0fG20RepresentableContextVyACG_tF",
+            "moduleName": "PointClickSdk",
+            "declAttributes": [
+              "Preconcurrency",
+              "Custom",
+              "AccessControl"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "updateUIViewController",
+            "printedName": "updateUIViewController(_:context:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "UIViewController",
+                "printedName": "UIKit.UIViewController",
+                "usr": "c:objc(cs)UIViewController"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "UIViewControllerRepresentableContext",
+                "printedName": "SwiftUI.UIViewControllerRepresentableContext<PointClickSdk.PointClickView>",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "PointClickView",
+                    "printedName": "PointClickSdk.PointClickView",
+                    "usr": "s:13PointClickSdk0aB4ViewV"
+                  }
+                ],
+                "usr": "s:7SwiftUI36UIViewControllerRepresentableContextV"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:13PointClickSdk0aB4ViewV22updateUIViewController_7contextySo0fG0C_7SwiftUI0fG20RepresentableContextVyACGtF",
+            "mangledName": "$s13PointClickSdk0aB4ViewV22updateUIViewController_7contextySo0fG0C_7SwiftUI0fG20RepresentableContextVyACGtF",
+            "moduleName": "PointClickSdk",
+            "declAttributes": [
+              "Preconcurrency",
+              "Custom",
+              "AccessControl"
+            ],
+            "funcSelfKind": "NonMutating"
+          }
+        ],
+        "declKind": "Struct",
+        "usr": "s:13PointClickSdk0aB4ViewV",
+        "mangledName": "$s13PointClickSdk0aB4ViewV",
+        "moduleName": "PointClickSdk",
+        "intro_iOS": "15.0",
+        "declAttributes": [
+          "Preconcurrency",
+          "Custom",
+          "AccessControl",
+          "Available",
+          "RawDocComment"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "UIViewControllerRepresentable",
+            "printedName": "UIViewControllerRepresentable",
+            "children": [
+              {
+                "kind": "TypeWitness",
+                "name": "UIViewControllerType",
+                "printedName": "UIViewControllerType",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "UIViewController",
+                    "printedName": "UIKit.UIViewController",
+                    "usr": "c:objc(cs)UIViewController"
+                  }
+                ]
+              },
+              {
+                "kind": "TypeWitness",
+                "name": "Coordinator",
+                "printedName": "Coordinator",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ]
+              }
+            ],
+            "usr": "s:7SwiftUI29UIViewControllerRepresentableP",
+            "mangledName": "$s7SwiftUI29UIViewControllerRepresentableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "View",
+            "printedName": "View",
+            "children": [
+              {
+                "kind": "TypeWitness",
+                "name": "Body",
+                "printedName": "Body",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Never",
+                    "printedName": "Swift.Never",
+                    "usr": "s:s5NeverO"
+                  }
+                ]
+              }
+            ],
+            "usr": "s:7SwiftUI4ViewP",
+            "mangledName": "$s7SwiftUI4ViewP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Sendable",
+            "printedName": "Sendable",
+            "usr": "s:s8SendableP",
+            "mangledName": "$ss8SendableP"
+          }
+        ]
+      }
+    ],
+    "json_format_version": 8
+  },
+  "ConstValues": [
+    {
+      "filePath": "\/Users\/martus\/Workspace\/pointclick\/pointclick-sdk-ios\/.build\/xcframework\/DerivedData-Sim\/Build\/Intermediates.noindex\/ArchiveIntermediates\/PointClickSdk\/IntermediateBuildFilesPath\/PointClickSdk.build\/Release-iphonesimulator\/PointClickSdk.build\/DerivedSources\/resource_bundle_accessor.swift",
+      "kind": "StringLiteral",
+      "offset": 295,
+      "length": 29,
+      "value": "\"PointClickSdk_PointClickSdk\""
+    },
+    {
+      "filePath": "\/Users\/martus\/Workspace\/pointclick\/pointclick-sdk-ios\/.build\/xcframework\/DerivedData-Sim\/Build\/Intermediates.noindex\/ArchiveIntermediates\/PointClickSdk\/IntermediateBuildFilesPath\/PointClickSdk.build\/Release-iphonesimulator\/PointClickSdk.build\/DerivedSources\/resource_bundle_accessor.swift",
+      "kind": "Array",
+      "offset": 971,
+      "length": 2,
+      "value": "[]"
+    },
+    {
+      "filePath": "\/Users\/martus\/Workspace\/pointclick\/pointclick-sdk-ios\/.build\/xcframework\/DerivedData-Sim\/Build\/Intermediates.noindex\/ArchiveIntermediates\/PointClickSdk\/IntermediateBuildFilesPath\/PointClickSdk.build\/Release-iphonesimulator\/PointClickSdk.build\/DerivedSources\/resource_bundle_accessor.swift",
+      "kind": "StringLiteral",
+      "offset": 1498,
+      "length": 9,
+      "value": "\".bundle\""
+    },
+    {
+      "filePath": "\/Users\/martus\/Workspace\/pointclick\/pointclick-sdk-ios\/.build\/xcframework\/DerivedData-Sim\/Build\/Intermediates.noindex\/ArchiveIntermediates\/PointClickSdk\/IntermediateBuildFilesPath\/PointClickSdk.build\/Release-iphonesimulator\/PointClickSdk.build\/DerivedSources\/resource_bundle_accessor.swift",
+      "kind": "StringLiteral",
+      "offset": 1650,
+      "length": 57,
+      "value": "\"unable to find bundle named PointClickSdk_PointClickSdk\""
+    },
+    {
+      "filePath": "\/Users\/martus\/Workspace\/pointclick\/pointclick-sdk-ios\/Sources\/PointClickSdk\/Internal\/Mediation\/LevelPlayAdapter.swift",
+      "kind": "StringLiteral",
+      "offset": 481,
+      "length": 42,
+      "value": "\"kr.co.pointclick.sdk.mediation.levelplay\""
+    },
+    {
+      "filePath": "\/Users\/martus\/Workspace\/pointclick\/pointclick-sdk-ios\/Sources\/PointClickSdk\/Internal\/Mediation\/LevelPlayAdapter.swift",
+      "kind": "Dictionary",
+      "offset": 577,
+      "length": 3,
+      "value": "[]"
+    },
+    {
+      "filePath": "\/Users\/martus\/Workspace\/pointclick\/pointclick-sdk-ios\/Sources\/PointClickSdk\/Internal\/Mediation\/LevelPlayAdapter.swift",
+      "kind": "Array",
+      "offset": 623,
+      "length": 2,
+      "value": "[]"
+    },
+    {
+      "filePath": "\/Users\/martus\/Workspace\/pointclick\/pointclick-sdk-ios\/Sources\/PointClickSdk\/Internal\/Mediation\/LevelPlayAdapter.swift",
+      "kind": "Dictionary",
+      "offset": 694,
+      "length": 3,
+      "value": "[]"
+    },
+    {
+      "filePath": "\/Users\/martus\/Workspace\/pointclick\/pointclick-sdk-ios\/Sources\/PointClickSdk\/Internal\/Mediation\/MediationScriptHandler.swift",
+      "kind": "StringLiteral",
+      "offset": 394,
+      "length": 22,
+      "value": "\"POINTCLICK_MEDIATION\""
+    },
+    {
+      "filePath": "\/Users\/martus\/Workspace\/pointclick\/pointclick-sdk-ios\/Sources\/PointClickSdk\/Internal\/Mediation\/MediationScriptHandler.swift",
+      "kind": "StringLiteral",
+      "offset": 456,
+      "length": 11,
+      "value": "\"LEVELPLAY\""
+    },
+    {
+      "filePath": "\/Users\/martus\/Workspace\/pointclick\/pointclick-sdk-ios\/Sources\/PointClickSdk\/Internal\/Mediation\/MediationScriptHandler.swift",
+      "kind": "BooleanLiteral",
+      "offset": 3785,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/martus\/Workspace\/pointclick\/pointclick-sdk-ios\/Sources\/PointClickSdk\/Internal\/Mediation\/ObjCHelper.swift",
+      "kind": "StringLiteral",
+      "offset": 685,
+      "length": 7,
+      "value": "\"alloc\""
+    },
+    {
+      "filePath": "\/Users\/martus\/Workspace\/pointclick\/pointclick-sdk-ios\/Sources\/PointClickSdk\/Internal\/Mediation\/ObjCHelper.swift",
+      "kind": "IntegerLiteral",
+      "offset": 1686,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/martus\/Workspace\/pointclick\/pointclick-sdk-ios\/Sources\/PointClickSdk\/Internal\/Mediation\/ObjCHelper.swift",
+      "kind": "IntegerLiteral",
+      "offset": 1833,
+      "length": 1,
+      "value": "1"
+    },
+    {
+      "filePath": "\/Users\/martus\/Workspace\/pointclick\/pointclick-sdk-ios\/Sources\/PointClickSdk\/Internal\/Mediation\/ObjCHelper.swift",
+      "kind": "IntegerLiteral",
+      "offset": 1983,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/martus\/Workspace\/pointclick\/pointclick-sdk-ios\/Sources\/PointClickSdk\/Internal\/Mediation\/ObjCHelper.swift",
+      "kind": "IntegerLiteral",
+      "offset": 2000,
+      "length": 1,
+      "value": "2"
+    },
+    {
+      "filePath": "\/Users\/martus\/Workspace\/pointclick\/pointclick-sdk-ios\/Sources\/PointClickSdk\/Internal\/Mediation\/ObjCHelper.swift",
+      "kind": "IntegerLiteral",
+      "offset": 2161,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/martus\/Workspace\/pointclick\/pointclick-sdk-ios\/Sources\/PointClickSdk\/Internal\/Mediation\/ObjCHelper.swift",
+      "kind": "IntegerLiteral",
+      "offset": 2170,
+      "length": 1,
+      "value": "1"
+    },
+    {
+      "filePath": "\/Users\/martus\/Workspace\/pointclick\/pointclick-sdk-ios\/Sources\/PointClickSdk\/Internal\/Mediation\/ObjCHelper.swift",
+      "kind": "IntegerLiteral",
+      "offset": 2573,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/martus\/Workspace\/pointclick\/pointclick-sdk-ios\/Sources\/PointClickSdk\/Internal\/Mediation\/ObjCHelper.swift",
+      "kind": "IntegerLiteral",
+      "offset": 2720,
+      "length": 1,
+      "value": "1"
+    },
+    {
+      "filePath": "\/Users\/martus\/Workspace\/pointclick\/pointclick-sdk-ios\/Sources\/PointClickSdk\/Internal\/Mediation\/ObjCHelper.swift",
+      "kind": "IntegerLiteral",
+      "offset": 2870,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/martus\/Workspace\/pointclick\/pointclick-sdk-ios\/Sources\/PointClickSdk\/Internal\/Mediation\/ObjCHelper.swift",
+      "kind": "IntegerLiteral",
+      "offset": 2887,
+      "length": 1,
+      "value": "2"
+    },
+    {
+      "filePath": "\/Users\/martus\/Workspace\/pointclick\/pointclick-sdk-ios\/Sources\/PointClickSdk\/Internal\/Mediation\/ObjCHelper.swift",
+      "kind": "IntegerLiteral",
+      "offset": 3048,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/martus\/Workspace\/pointclick\/pointclick-sdk-ios\/Sources\/PointClickSdk\/Internal\/Mediation\/ObjCHelper.swift",
+      "kind": "IntegerLiteral",
+      "offset": 3057,
+      "length": 1,
+      "value": "1"
+    },
+    {
+      "filePath": "\/Users\/martus\/Workspace\/pointclick\/pointclick-sdk-ios\/Sources\/PointClickSdk\/Internal\/Mediation\/ObjCHelper.swift",
+      "kind": "BooleanLiteral",
+      "offset": 3350,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/martus\/Workspace\/pointclick\/pointclick-sdk-ios\/Sources\/PointClickSdk\/PointClickError.swift",
+      "kind": "IntegerLiteral",
+      "offset": 291,
+      "length": 12,
+      "value": "1"
+    },
+    {
+      "filePath": "\/Users\/martus\/Workspace\/pointclick\/pointclick-sdk-ios\/Sources\/PointClickSdk\/PointClickError.swift",
+      "kind": "IntegerLiteral",
+      "offset": 343,
+      "length": 13,
+      "value": "2"
+    },
+    {
+      "filePath": "\/Users\/martus\/Workspace\/pointclick\/pointclick-sdk-ios\/Sources\/PointClickSdk\/PointClickSdk.swift",
+      "kind": "BooleanLiteral",
+      "offset": 670,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/martus\/Workspace\/pointclick\/pointclick-sdk-ios\/Sources\/PointClickSdk\/PointClickSdk.swift",
+      "kind": "BooleanLiteral",
+      "offset": 1143,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/martus\/Workspace\/pointclick\/pointclick-sdk-ios\/Sources\/PointClickSdk\/PointClickSdk.swift",
+      "kind": "IntegerLiteral",
+      "offset": 1187,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/martus\/Workspace\/pointclick\/pointclick-sdk-ios\/Sources\/PointClickSdk\/PointClickSdk.swift",
+      "kind": "BooleanLiteral",
+      "offset": 1231,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/martus\/Workspace\/pointclick\/pointclick-sdk-ios\/Sources\/PointClickSdk\/PointClickUserGender.swift",
+      "kind": "IntegerLiteral",
+      "offset": 207,
+      "length": 6,
+      "value": "1"
+    }
+  ]
+}
