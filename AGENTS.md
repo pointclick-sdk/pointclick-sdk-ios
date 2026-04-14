@@ -15,7 +15,7 @@ PointClick 서비스를 앱에 통합하는 iOS SDK 입니다.
 
 ```swift
 dependencies: [
-    .package(url: "https://github.com/pointclick-sdk/pointclick-sdk-ios.git", from: "0.0.1")
+    .package(url: "https://github.com/pointclick-sdk/pointclick-sdk-ios.git", from: "0.0.2")
 ]
 ```
 

@@ -469,8 +469,8 @@
       },
       {
         "kind": "Import",
-        "name": "DoohubDeviceInfo",
-        "printedName": "DoohubDeviceInfo",
+        "name": "FSNDeviceInfo",
+        "printedName": "FSNDeviceInfo",
         "declKind": "Import",
         "moduleName": "PointClickSdk",
         "declAttributes": [
@@ -959,8 +959,8 @@
       },
       {
         "kind": "Import",
-        "name": "DoohubDeviceInfo",
-        "printedName": "DoohubDeviceInfo",
+        "name": "FSNDeviceInfo",
+        "printedName": "FSNDeviceInfo",
         "declKind": "Import",
         "moduleName": "PointClickSdk",
         "declAttributes": [
@@ -969,8 +969,8 @@
       },
       {
         "kind": "Import",
-        "name": "DoohubWebView",
-        "printedName": "DoohubWebView",
+        "name": "FSNWebView",
+        "printedName": "FSNWebView",
         "declKind": "Import",
         "moduleName": "PointClickSdk",
         "declAttributes": [
@@ -1812,28 +1812,28 @@
     {
       "filePath": "\/Users\/martus\/Workspace\/pointclick\/pointclick-sdk-ios\/Sources\/PointClickSdk\/PointClickSdk.swift",
       "kind": "BooleanLiteral",
-      "offset": 670,
+      "offset": 667,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/martus\/Workspace\/pointclick\/pointclick-sdk-ios\/Sources\/PointClickSdk\/PointClickSdk.swift",
       "kind": "BooleanLiteral",
-      "offset": 1143,
+      "offset": 1140,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/martus\/Workspace\/pointclick\/pointclick-sdk-ios\/Sources\/PointClickSdk\/PointClickSdk.swift",
       "kind": "IntegerLiteral",
-      "offset": 1187,
+      "offset": 1184,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/martus\/Workspace\/pointclick\/pointclick-sdk-ios\/Sources\/PointClickSdk\/PointClickSdk.swift",
       "kind": "BooleanLiteral",
-      "offset": 1231,
+      "offset": 1228,
       "length": 5,
       "value": "false"
     },
