@@ -21,7 +21,7 @@ https://github.com/pointclick-sdk/pointclick-sdk-ios
 
 ```swift
 dependencies: [
-    .package(url: "https://github.com/pointclick-sdk/pointclick-sdk-ios.git", from: "0.0.2")
+    .package(url: "https://github.com/pointclick-sdk/pointclick-sdk-ios.git", from: "0.0.3")
 ]
 ```
 
@@ -173,6 +173,81 @@ class ViewController: UIViewController {
     }];
 }
 ```
+
+---
+
+## Shortcut 브릿지 (매체 WebView 연동)
+
+앱이 소유한 WKWebView 에서 PointClick Web SDK(`pointclick-web-sdk.js`)의 Shortcut 광고를 표시하려면, 해당 WebView 에 브릿지를 등록합니다.
+
+> SDK 초기화(`initialize`)가 먼저 완료된 상태여야 합니다.
+
+### Swift (UIKit)
+
+```swift
+import PointClickSdk
+import WebKit
+
+class MyViewController: UIViewController {
+    var webView: WKWebView!
+
+    override func viewDidLoad() {
+        super.viewDidLoad()
+
+        webView = WKWebView(frame: view.bounds)
+        view.addSubview(webView)
+
+        // 1. 브릿지 등록 (URL 로드 전에 호출)
+        PointClick.shared.registerWebView(webView)
+
+        // 2. Web SDK 가 포함된 매체 웹페이지 로드
+        let url = URL(string: "https://www.example.com/mypage")!
+        webView.load(URLRequest(url: url))
+    }
+
+    deinit {
+        // 3. 해제 (메모리 누수 방지)
+        PointClick.shared.unregisterWebView(webView)
+    }
+}
+```
+
+### Objective-C
+
+```objc
+@import PointClickSdk;
+@import WebKit;
+
+@interface MyViewController ()
+@property (nonatomic, strong) WKWebView *webView;
+@end
+
+@implementation MyViewController
+
+- (void)viewDidLoad {
+    [super viewDidLoad];
+
+    self.webView = [[WKWebView alloc] initWithFrame:self.view.bounds];
+    [self.view addSubview:self.webView];
+
+    // 1. 브릿지 등록
+    [[PCPointClick shared] registerWebView:self.webView];
+
+    // 2. 매체 웹페이지 로드
+    NSURL *url = [NSURL URLWithString:@"https://www.example.com/mypage"];
+    [self.webView loadRequest:[NSURLRequest requestWithURL:url]];
+}
+
+- (void)dealloc {
+    // 3. 해제
+    [[PCPointClick shared] unregisterWebView:self.webView];
+}
+
+@end
+```
+
+> `registerWebView` 는 반드시 `initialize` 호출 후, URL 로드 전에 호출해야 합니다.
+> `unregisterWebView` 는 ViewController 의 `deinit`(또는 `dealloc`)에서 호출하여 메모리 누수를 방지합니다.
 
 ---
 

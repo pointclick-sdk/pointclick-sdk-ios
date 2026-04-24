@@ -111,6 +111,30 @@
       },
       {
         "kind": "Import",
+        "name": "UIKit",
+        "printedName": "UIKit",
+        "declKind": "Import",
+        "moduleName": "PointClickSdk"
+      },
+      {
+        "kind": "Import",
+        "name": "WebKit",
+        "printedName": "WebKit",
+        "declKind": "Import",
+        "moduleName": "PointClickSdk"
+      },
+      {
+        "kind": "Import",
+        "name": "FSNDeviceInfo",
+        "printedName": "FSNDeviceInfo",
+        "declKind": "Import",
+        "moduleName": "PointClickSdk",
+        "declAttributes": [
+          "AccessControl"
+        ]
+      },
+      {
+        "kind": "Import",
         "name": "Foundation",
         "printedName": "Foundation",
         "declKind": "Import",
@@ -464,6 +488,13 @@
         "kind": "Import",
         "name": "Foundation",
         "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "PointClickSdk"
+      },
+      {
+        "kind": "Import",
+        "name": "WebKit",
+        "printedName": "WebKit",
         "declKind": "Import",
         "moduleName": "PointClickSdk"
       },
@@ -856,6 +887,169 @@
               "Final",
               "AccessControl",
               "ObjC"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "registerWebView",
+            "printedName": "registerWebView(_:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "WKWebView",
+                "printedName": "WebKit.WKWebView",
+                "usr": "c:objc(cs)WKWebView"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@PointClickSdk@objc(cs)PCPointClick(im)registerWebView:",
+            "mangledName": "$s13PointClickSdk0aB0C15registerWebViewyySo05WKWebF0CF",
+            "moduleName": "PointClickSdk",
+            "declAttributes": [
+              "Final",
+              "AccessControl",
+              "ObjC",
+              "RawDocComment"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "unregisterWebView",
+            "printedName": "unregisterWebView(_:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "WKWebView",
+                "printedName": "WebKit.WKWebView",
+                "usr": "c:objc(cs)WKWebView"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@PointClickSdk@objc(cs)PCPointClick(im)unregisterWebView:",
+            "mangledName": "$s13PointClickSdk0aB0C17unregisterWebViewyySo05WKWebF0CF",
+            "moduleName": "PointClickSdk",
+            "declAttributes": [
+              "Final",
+              "AccessControl",
+              "ObjC",
+              "RawDocComment"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "shortcutUserScript",
+            "printedName": "shortcutUserScript()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "WebKit.WKUserScript?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "WKUserScript",
+                    "printedName": "WebKit.WKUserScript",
+                    "usr": "c:objc(cs)WKUserScript"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@PointClickSdk@objc(cs)PCPointClick(im)shortcutUserScript",
+            "mangledName": "$s13PointClickSdk0aB0C18shortcutUserScriptSo06WKUserF0CSgyF",
+            "moduleName": "PointClickSdk",
+            "declAttributes": [
+              "Final",
+              "AccessControl",
+              "ObjC",
+              "RawDocComment"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "shortcutMessageHandler",
+            "printedName": "shortcutMessageHandler()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "(handler: any WebKit.WKScriptMessageHandler, name: Swift.String)?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Tuple",
+                    "printedName": "(handler: any WebKit.WKScriptMessageHandler, name: Swift.String)",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "WKScriptMessageHandler",
+                        "printedName": "any WebKit.WKScriptMessageHandler",
+                        "usr": "c:objc(pl)WKScriptMessageHandler"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ]
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:13PointClickSdk0aB0C22shortcutMessageHandlerSo08WKScripteF0_p7handler_SS4nametSgyF",
+            "mangledName": "$s13PointClickSdk0aB0C22shortcutMessageHandlerSo08WKScripteF0_p7handler_SS4nametSgyF",
+            "moduleName": "PointClickSdk",
+            "declAttributes": [
+              "Final",
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "notifyShortcutAdComplete",
+            "printedName": "notifyShortcutAdComplete(_:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@PointClickSdk@objc(cs)PCPointClick(im)notifyShortcutAdComplete:",
+            "mangledName": "$s13PointClickSdk0aB0C24notifyShortcutAdCompleteyySSF",
+            "moduleName": "PointClickSdk",
+            "declAttributes": [
+              "Final",
+              "AccessControl",
+              "ObjC",
+              "RawDocComment"
             ],
             "funcSelfKind": "NonMutating"
           }
@@ -1796,6 +1990,13 @@
       "value": "false"
     },
     {
+      "filePath": "\/Users\/martus\/Workspace\/pointclick\/pointclick-sdk-ios\/Sources\/PointClickSdk\/Internal\/Shortcut\/ShortcutScriptHandler.swift",
+      "kind": "StringLiteral",
+      "offset": 823,
+      "length": 20,
+      "value": "\"pointClickShortcut\""
+    },
+    {
       "filePath": "\/Users\/martus\/Workspace\/pointclick\/pointclick-sdk-ios\/Sources\/PointClickSdk\/PointClickError.swift",
       "kind": "IntegerLiteral",
       "offset": 291,
@@ -1812,28 +2013,28 @@
     {
       "filePath": "\/Users\/martus\/Workspace\/pointclick\/pointclick-sdk-ios\/Sources\/PointClickSdk\/PointClickSdk.swift",
       "kind": "BooleanLiteral",
-      "offset": 667,
+      "offset": 681,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/martus\/Workspace\/pointclick\/pointclick-sdk-ios\/Sources\/PointClickSdk\/PointClickSdk.swift",
       "kind": "BooleanLiteral",
-      "offset": 1140,
+      "offset": 1154,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/martus\/Workspace\/pointclick\/pointclick-sdk-ios\/Sources\/PointClickSdk\/PointClickSdk.swift",
       "kind": "IntegerLiteral",
-      "offset": 1184,
+      "offset": 1198,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/martus\/Workspace\/pointclick\/pointclick-sdk-ios\/Sources\/PointClickSdk\/PointClickSdk.swift",
       "kind": "BooleanLiteral",
-      "offset": 1228,
+      "offset": 1242,
       "length": 5,
       "value": "false"
     },
