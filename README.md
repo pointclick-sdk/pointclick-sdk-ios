@@ -21,7 +21,7 @@ https://github.com/pointclick-sdk/pointclick-sdk-ios
 
 ```swift
 dependencies: [
-    .package(url: "https://github.com/pointclick-sdk/pointclick-sdk-ios.git", from: "0.0.3")
+    .package(url: "https://github.com/pointclick-sdk/pointclick-sdk-ios.git", from: "0.0.4")
 ]
 ```
 
