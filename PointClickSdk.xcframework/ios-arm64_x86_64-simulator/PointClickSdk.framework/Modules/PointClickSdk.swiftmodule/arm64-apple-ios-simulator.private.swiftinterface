@@ -1,7 +1,7 @@
 // swift-interface-format-version: 1.0
-// swift-compiler-version: Apple Swift version 6.3.1 effective-5.10 (swiftlang-6.3.1.1.2 clang-2100.0.123.102)
-// swift-module-flags: -target arm64-apple-ios15.0-simulator -enable-objc-interop -enable-library-evolution -swift-version 5 -O -enable-experimental-feature DebugDescriptionMacro -module-name PointClickSdk -package-name pointclick_sdk_ios
-// swift-module-flags-ignorable: -no-verify-emitted-module-interface -formal-cxx-interoperability-mode=off -interface-compiler-version 6.3.1
+// swift-compiler-version: Apple Swift version 6.2.4 effective-5.10 (swiftlang-6.2.4.1.4 clang-1700.6.4.2)
+// swift-module-flags: -target arm64-apple-ios15.0-simulator -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -enable-experimental-feature DebugDescriptionMacro -module-name PointClickSdk -package-name pointclick_sdk_ios
+// swift-module-flags-ignorable: -no-verify-emitted-module-interface -formal-cxx-interoperability-mode=off -interface-compiler-version 6.2.4
 import Foundation
 import Foundation/*.Bundle*/
 import Foundation/*.ProcessInfo*/
@@ -18,7 +18,9 @@ import _SwiftConcurrencyShims
   case notInitialized
   case networkError
   case invalidConfig
+  #if compiler(>=5.3) && $NonescapableTypes
   public init?(rawValue: Swift.Int)
+  #endif
   public typealias RawValue = Swift.Int
   public static var _nsErrorDomain: Swift.String {
     get
@@ -33,27 +35,37 @@ import _SwiftConcurrencyShims
     get
   }
   @objc final public var overrideURL: Foundation.URL?
+  #if compiler(>=5.3) && $NonescapableTypes
   final public func initialize(appId: Swift.String, userId: Swift.String, gender: PointClickSdk.PointClickUserGender? = nil, birthYear: Swift.Int? = nil)
+  #endif
   @objc(initializeWithAppId:userId:) final public func objc_initialize(appId: Swift.String, userId: Swift.String)
   @objc(initializeWithAppId:userId:gender:birthYear:) final public func objc_initialize(appId: Swift.String, userId: Swift.String, gender: PointClickSdk.PointClickUserGender, birthYear: Swift.Int)
   @objc final public func registerWebView(_ webView: WebKit.WKWebView)
   @objc final public func unregisterWebView(_ webView: WebKit.WKWebView)
+  #if compiler(>=5.3) && $NonescapableTypes
   @objc final public func shortcutUserScript() -> WebKit.WKUserScript?
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
   final public func shortcutMessageHandler() -> (handler: any WebKit.WKScriptMessageHandler, name: Swift.String)?
+  #endif
   @objc final public func notifyShortcutAdComplete(_ resultJson: Swift.String)
   @objc deinit
 }
 @_inheritsConvenienceInitializers @objc(PCPointClickUI) final public class PointClickUI : ObjectiveC.NSObject {
   @objc override dynamic public init()
   @objc final public func show(on viewController: UIKit.UIViewController)
+  #if compiler(>=5.3) && $NonescapableTypes
   @objc final public func createViewController() -> UIKit.UIViewController?
+  #endif
   @objc final public func handleBackNavigation()
   @objc deinit
 }
 @objc(PCUserGender) public enum PointClickUserGender : Swift.Int {
   case male
   case female
+  #if compiler(>=5.3) && $NonescapableTypes
   public init?(rawValue: Swift.Int)
+  #endif
   public typealias RawValue = Swift.Int
   public var rawValue: Swift.Int {
     get
