@@ -1815,231 +1815,231 @@
   },
   "ConstValues": [
     {
-      "filePath": "\/Users\/bss\/FSN\/source\/pointclick-sdk-ios\/.build\/xcframework\/DerivedData-Sim\/Build\/Intermediates.noindex\/ArchiveIntermediates\/PointClickSdk\/IntermediateBuildFilesPath\/PointClickSdk.build\/Release-iphonesimulator\/PointClickSdk.build\/DerivedSources\/resource_bundle_accessor.swift",
+      "filePath": "\/Users\/runner\/work\/pointclick-sdk-ios\/pointclick-sdk-ios\/.build\/xcframework\/DerivedData-Sim\/Build\/Intermediates.noindex\/ArchiveIntermediates\/PointClickSdk\/IntermediateBuildFilesPath\/PointClickSdk.build\/Release-iphonesimulator\/PointClickSdk.build\/DerivedSources\/resource_bundle_accessor.swift",
       "kind": "StringLiteral",
       "offset": 295,
       "length": 29,
       "value": "\"PointClickSdk_PointClickSdk\""
     },
     {
-      "filePath": "\/Users\/bss\/FSN\/source\/pointclick-sdk-ios\/.build\/xcframework\/DerivedData-Sim\/Build\/Intermediates.noindex\/ArchiveIntermediates\/PointClickSdk\/IntermediateBuildFilesPath\/PointClickSdk.build\/Release-iphonesimulator\/PointClickSdk.build\/DerivedSources\/resource_bundle_accessor.swift",
+      "filePath": "\/Users\/runner\/work\/pointclick-sdk-ios\/pointclick-sdk-ios\/.build\/xcframework\/DerivedData-Sim\/Build\/Intermediates.noindex\/ArchiveIntermediates\/PointClickSdk\/IntermediateBuildFilesPath\/PointClickSdk.build\/Release-iphonesimulator\/PointClickSdk.build\/DerivedSources\/resource_bundle_accessor.swift",
       "kind": "Array",
       "offset": 971,
       "length": 2,
       "value": "[]"
     },
     {
-      "filePath": "\/Users\/bss\/FSN\/source\/pointclick-sdk-ios\/.build\/xcframework\/DerivedData-Sim\/Build\/Intermediates.noindex\/ArchiveIntermediates\/PointClickSdk\/IntermediateBuildFilesPath\/PointClickSdk.build\/Release-iphonesimulator\/PointClickSdk.build\/DerivedSources\/resource_bundle_accessor.swift",
+      "filePath": "\/Users\/runner\/work\/pointclick-sdk-ios\/pointclick-sdk-ios\/.build\/xcframework\/DerivedData-Sim\/Build\/Intermediates.noindex\/ArchiveIntermediates\/PointClickSdk\/IntermediateBuildFilesPath\/PointClickSdk.build\/Release-iphonesimulator\/PointClickSdk.build\/DerivedSources\/resource_bundle_accessor.swift",
       "kind": "StringLiteral",
       "offset": 1498,
       "length": 9,
       "value": "\".bundle\""
     },
     {
-      "filePath": "\/Users\/bss\/FSN\/source\/pointclick-sdk-ios\/.build\/xcframework\/DerivedData-Sim\/Build\/Intermediates.noindex\/ArchiveIntermediates\/PointClickSdk\/IntermediateBuildFilesPath\/PointClickSdk.build\/Release-iphonesimulator\/PointClickSdk.build\/DerivedSources\/resource_bundle_accessor.swift",
+      "filePath": "\/Users\/runner\/work\/pointclick-sdk-ios\/pointclick-sdk-ios\/.build\/xcframework\/DerivedData-Sim\/Build\/Intermediates.noindex\/ArchiveIntermediates\/PointClickSdk\/IntermediateBuildFilesPath\/PointClickSdk.build\/Release-iphonesimulator\/PointClickSdk.build\/DerivedSources\/resource_bundle_accessor.swift",
       "kind": "StringLiteral",
       "offset": 1650,
       "length": 57,
       "value": "\"unable to find bundle named PointClickSdk_PointClickSdk\""
     },
     {
-      "filePath": "\/Users\/bss\/FSN\/source\/pointclick-sdk-ios\/Sources\/PointClickSdk\/Internal\/Mediation\/LevelPlayAdapter.swift",
+      "filePath": "\/Users\/runner\/work\/pointclick-sdk-ios\/pointclick-sdk-ios\/Sources\/PointClickSdk\/Internal\/Mediation\/LevelPlayAdapter.swift",
       "kind": "StringLiteral",
       "offset": 481,
       "length": 42,
       "value": "\"kr.co.pointclick.sdk.mediation.levelplay\""
     },
     {
-      "filePath": "\/Users\/bss\/FSN\/source\/pointclick-sdk-ios\/Sources\/PointClickSdk\/Internal\/Mediation\/LevelPlayAdapter.swift",
+      "filePath": "\/Users\/runner\/work\/pointclick-sdk-ios\/pointclick-sdk-ios\/Sources\/PointClickSdk\/Internal\/Mediation\/LevelPlayAdapter.swift",
       "kind": "Dictionary",
       "offset": 577,
       "length": 3,
       "value": "[]"
     },
     {
-      "filePath": "\/Users\/bss\/FSN\/source\/pointclick-sdk-ios\/Sources\/PointClickSdk\/Internal\/Mediation\/LevelPlayAdapter.swift",
+      "filePath": "\/Users\/runner\/work\/pointclick-sdk-ios\/pointclick-sdk-ios\/Sources\/PointClickSdk\/Internal\/Mediation\/LevelPlayAdapter.swift",
       "kind": "Array",
       "offset": 623,
       "length": 2,
       "value": "[]"
     },
     {
-      "filePath": "\/Users\/bss\/FSN\/source\/pointclick-sdk-ios\/Sources\/PointClickSdk\/Internal\/Mediation\/LevelPlayAdapter.swift",
+      "filePath": "\/Users\/runner\/work\/pointclick-sdk-ios\/pointclick-sdk-ios\/Sources\/PointClickSdk\/Internal\/Mediation\/LevelPlayAdapter.swift",
       "kind": "Dictionary",
       "offset": 694,
       "length": 3,
       "value": "[]"
     },
     {
-      "filePath": "\/Users\/bss\/FSN\/source\/pointclick-sdk-ios\/Sources\/PointClickSdk\/Internal\/Mediation\/MediationScriptHandler.swift",
+      "filePath": "\/Users\/runner\/work\/pointclick-sdk-ios\/pointclick-sdk-ios\/Sources\/PointClickSdk\/Internal\/Mediation\/MediationScriptHandler.swift",
       "kind": "StringLiteral",
       "offset": 394,
       "length": 22,
       "value": "\"POINTCLICK_MEDIATION\""
     },
     {
-      "filePath": "\/Users\/bss\/FSN\/source\/pointclick-sdk-ios\/Sources\/PointClickSdk\/Internal\/Mediation\/MediationScriptHandler.swift",
+      "filePath": "\/Users\/runner\/work\/pointclick-sdk-ios\/pointclick-sdk-ios\/Sources\/PointClickSdk\/Internal\/Mediation\/MediationScriptHandler.swift",
       "kind": "StringLiteral",
       "offset": 456,
       "length": 11,
       "value": "\"LEVELPLAY\""
     },
     {
-      "filePath": "\/Users\/bss\/FSN\/source\/pointclick-sdk-ios\/Sources\/PointClickSdk\/Internal\/Mediation\/MediationScriptHandler.swift",
+      "filePath": "\/Users\/runner\/work\/pointclick-sdk-ios\/pointclick-sdk-ios\/Sources\/PointClickSdk\/Internal\/Mediation\/MediationScriptHandler.swift",
       "kind": "BooleanLiteral",
       "offset": 3785,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/Users\/bss\/FSN\/source\/pointclick-sdk-ios\/Sources\/PointClickSdk\/Internal\/Mediation\/ObjCHelper.swift",
+      "filePath": "\/Users\/runner\/work\/pointclick-sdk-ios\/pointclick-sdk-ios\/Sources\/PointClickSdk\/Internal\/Mediation\/ObjCHelper.swift",
       "kind": "StringLiteral",
       "offset": 685,
       "length": 7,
       "value": "\"alloc\""
     },
     {
-      "filePath": "\/Users\/bss\/FSN\/source\/pointclick-sdk-ios\/Sources\/PointClickSdk\/Internal\/Mediation\/ObjCHelper.swift",
+      "filePath": "\/Users\/runner\/work\/pointclick-sdk-ios\/pointclick-sdk-ios\/Sources\/PointClickSdk\/Internal\/Mediation\/ObjCHelper.swift",
       "kind": "IntegerLiteral",
       "offset": 1686,
       "length": 1,
       "value": "0"
     },
     {
-      "filePath": "\/Users\/bss\/FSN\/source\/pointclick-sdk-ios\/Sources\/PointClickSdk\/Internal\/Mediation\/ObjCHelper.swift",
+      "filePath": "\/Users\/runner\/work\/pointclick-sdk-ios\/pointclick-sdk-ios\/Sources\/PointClickSdk\/Internal\/Mediation\/ObjCHelper.swift",
       "kind": "IntegerLiteral",
       "offset": 1833,
       "length": 1,
       "value": "1"
     },
     {
-      "filePath": "\/Users\/bss\/FSN\/source\/pointclick-sdk-ios\/Sources\/PointClickSdk\/Internal\/Mediation\/ObjCHelper.swift",
+      "filePath": "\/Users\/runner\/work\/pointclick-sdk-ios\/pointclick-sdk-ios\/Sources\/PointClickSdk\/Internal\/Mediation\/ObjCHelper.swift",
       "kind": "IntegerLiteral",
       "offset": 1983,
       "length": 1,
       "value": "0"
     },
     {
-      "filePath": "\/Users\/bss\/FSN\/source\/pointclick-sdk-ios\/Sources\/PointClickSdk\/Internal\/Mediation\/ObjCHelper.swift",
+      "filePath": "\/Users\/runner\/work\/pointclick-sdk-ios\/pointclick-sdk-ios\/Sources\/PointClickSdk\/Internal\/Mediation\/ObjCHelper.swift",
       "kind": "IntegerLiteral",
       "offset": 2000,
       "length": 1,
       "value": "2"
     },
     {
-      "filePath": "\/Users\/bss\/FSN\/source\/pointclick-sdk-ios\/Sources\/PointClickSdk\/Internal\/Mediation\/ObjCHelper.swift",
+      "filePath": "\/Users\/runner\/work\/pointclick-sdk-ios\/pointclick-sdk-ios\/Sources\/PointClickSdk\/Internal\/Mediation\/ObjCHelper.swift",
       "kind": "IntegerLiteral",
       "offset": 2161,
       "length": 1,
       "value": "0"
     },
     {
-      "filePath": "\/Users\/bss\/FSN\/source\/pointclick-sdk-ios\/Sources\/PointClickSdk\/Internal\/Mediation\/ObjCHelper.swift",
+      "filePath": "\/Users\/runner\/work\/pointclick-sdk-ios\/pointclick-sdk-ios\/Sources\/PointClickSdk\/Internal\/Mediation\/ObjCHelper.swift",
       "kind": "IntegerLiteral",
       "offset": 2170,
       "length": 1,
       "value": "1"
     },
     {
-      "filePath": "\/Users\/bss\/FSN\/source\/pointclick-sdk-ios\/Sources\/PointClickSdk\/Internal\/Mediation\/ObjCHelper.swift",
+      "filePath": "\/Users\/runner\/work\/pointclick-sdk-ios\/pointclick-sdk-ios\/Sources\/PointClickSdk\/Internal\/Mediation\/ObjCHelper.swift",
       "kind": "IntegerLiteral",
       "offset": 2573,
       "length": 1,
       "value": "0"
     },
     {
-      "filePath": "\/Users\/bss\/FSN\/source\/pointclick-sdk-ios\/Sources\/PointClickSdk\/Internal\/Mediation\/ObjCHelper.swift",
+      "filePath": "\/Users\/runner\/work\/pointclick-sdk-ios\/pointclick-sdk-ios\/Sources\/PointClickSdk\/Internal\/Mediation\/ObjCHelper.swift",
       "kind": "IntegerLiteral",
       "offset": 2720,
       "length": 1,
       "value": "1"
     },
     {
-      "filePath": "\/Users\/bss\/FSN\/source\/pointclick-sdk-ios\/Sources\/PointClickSdk\/Internal\/Mediation\/ObjCHelper.swift",
+      "filePath": "\/Users\/runner\/work\/pointclick-sdk-ios\/pointclick-sdk-ios\/Sources\/PointClickSdk\/Internal\/Mediation\/ObjCHelper.swift",
       "kind": "IntegerLiteral",
       "offset": 2870,
       "length": 1,
       "value": "0"
     },
     {
-      "filePath": "\/Users\/bss\/FSN\/source\/pointclick-sdk-ios\/Sources\/PointClickSdk\/Internal\/Mediation\/ObjCHelper.swift",
+      "filePath": "\/Users\/runner\/work\/pointclick-sdk-ios\/pointclick-sdk-ios\/Sources\/PointClickSdk\/Internal\/Mediation\/ObjCHelper.swift",
       "kind": "IntegerLiteral",
       "offset": 2887,
       "length": 1,
       "value": "2"
     },
     {
-      "filePath": "\/Users\/bss\/FSN\/source\/pointclick-sdk-ios\/Sources\/PointClickSdk\/Internal\/Mediation\/ObjCHelper.swift",
+      "filePath": "\/Users\/runner\/work\/pointclick-sdk-ios\/pointclick-sdk-ios\/Sources\/PointClickSdk\/Internal\/Mediation\/ObjCHelper.swift",
       "kind": "IntegerLiteral",
       "offset": 3048,
       "length": 1,
       "value": "0"
     },
     {
-      "filePath": "\/Users\/bss\/FSN\/source\/pointclick-sdk-ios\/Sources\/PointClickSdk\/Internal\/Mediation\/ObjCHelper.swift",
+      "filePath": "\/Users\/runner\/work\/pointclick-sdk-ios\/pointclick-sdk-ios\/Sources\/PointClickSdk\/Internal\/Mediation\/ObjCHelper.swift",
       "kind": "IntegerLiteral",
       "offset": 3057,
       "length": 1,
       "value": "1"
     },
     {
-      "filePath": "\/Users\/bss\/FSN\/source\/pointclick-sdk-ios\/Sources\/PointClickSdk\/Internal\/Mediation\/ObjCHelper.swift",
+      "filePath": "\/Users\/runner\/work\/pointclick-sdk-ios\/pointclick-sdk-ios\/Sources\/PointClickSdk\/Internal\/Mediation\/ObjCHelper.swift",
       "kind": "BooleanLiteral",
       "offset": 3350,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/Users\/bss\/FSN\/source\/pointclick-sdk-ios\/Sources\/PointClickSdk\/Internal\/Shortcut\/ShortcutScriptHandler.swift",
+      "filePath": "\/Users\/runner\/work\/pointclick-sdk-ios\/pointclick-sdk-ios\/Sources\/PointClickSdk\/Internal\/Shortcut\/ShortcutScriptHandler.swift",
       "kind": "StringLiteral",
       "offset": 1060,
       "length": 20,
       "value": "\"pointClickShortcut\""
     },
     {
-      "filePath": "\/Users\/bss\/FSN\/source\/pointclick-sdk-ios\/Sources\/PointClickSdk\/PointClickError.swift",
+      "filePath": "\/Users\/runner\/work\/pointclick-sdk-ios\/pointclick-sdk-ios\/Sources\/PointClickSdk\/PointClickError.swift",
       "kind": "IntegerLiteral",
       "offset": 291,
       "length": 12,
       "value": "1"
     },
     {
-      "filePath": "\/Users\/bss\/FSN\/source\/pointclick-sdk-ios\/Sources\/PointClickSdk\/PointClickError.swift",
+      "filePath": "\/Users\/runner\/work\/pointclick-sdk-ios\/pointclick-sdk-ios\/Sources\/PointClickSdk\/PointClickError.swift",
       "kind": "IntegerLiteral",
       "offset": 343,
       "length": 13,
       "value": "2"
     },
     {
-      "filePath": "\/Users\/bss\/FSN\/source\/pointclick-sdk-ios\/Sources\/PointClickSdk\/PointClickSdk.swift",
+      "filePath": "\/Users\/runner\/work\/pointclick-sdk-ios\/pointclick-sdk-ios\/Sources\/PointClickSdk\/PointClickSdk.swift",
       "kind": "BooleanLiteral",
       "offset": 681,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/Users\/bss\/FSN\/source\/pointclick-sdk-ios\/Sources\/PointClickSdk\/PointClickSdk.swift",
+      "filePath": "\/Users\/runner\/work\/pointclick-sdk-ios\/pointclick-sdk-ios\/Sources\/PointClickSdk\/PointClickSdk.swift",
       "kind": "BooleanLiteral",
       "offset": 1154,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/Users\/bss\/FSN\/source\/pointclick-sdk-ios\/Sources\/PointClickSdk\/PointClickSdk.swift",
+      "filePath": "\/Users\/runner\/work\/pointclick-sdk-ios\/pointclick-sdk-ios\/Sources\/PointClickSdk\/PointClickSdk.swift",
       "kind": "IntegerLiteral",
       "offset": 1198,
       "length": 1,
       "value": "0"
     },
     {
-      "filePath": "\/Users\/bss\/FSN\/source\/pointclick-sdk-ios\/Sources\/PointClickSdk\/PointClickSdk.swift",
+      "filePath": "\/Users\/runner\/work\/pointclick-sdk-ios\/pointclick-sdk-ios\/Sources\/PointClickSdk\/PointClickSdk.swift",
       "kind": "BooleanLiteral",
       "offset": 1242,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/Users\/bss\/FSN\/source\/pointclick-sdk-ios\/Sources\/PointClickSdk\/PointClickUserGender.swift",
+      "filePath": "\/Users\/runner\/work\/pointclick-sdk-ios\/pointclick-sdk-ios\/Sources\/PointClickSdk\/PointClickUserGender.swift",
       "kind": "IntegerLiteral",
       "offset": 207,
       "length": 6,
