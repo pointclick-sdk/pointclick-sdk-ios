@@ -34,7 +34,7 @@
 		</data>
 		<key>ios-arm64/PointClickSdk.framework/PointClickSdk</key>
 		<data>
-		LP/eSSRyb+TlJ7agn2V5R6iDcSs=
+		h+PoTa3ftFrJoMZFJsn3wj9ffk0=
 		</data>
 		<key>ios-arm64_x86_64-simulator/PointClickSdk.framework/Headers/PointClickSdk-Swift.h</key>
 		<data>
@@ -86,7 +86,7 @@
 		</data>
 		<key>ios-arm64_x86_64-simulator/PointClickSdk.framework/PointClickSdk</key>
 		<data>
-		STlOYZgOTUQgUNK3mQiAHSLPLgY=
+		LGg7A3yEqYJmQpccgVqYs8jXD5w=
 		</data>
 		<key>ios-arm64_x86_64-simulator/PointClickSdk.framework/_CodeSignature/CodeResources</key>
 		<data>
@@ -176,11 +176,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			LP/eSSRyb+TlJ7agn2V5R6iDcSs=
+			h+PoTa3ftFrJoMZFJsn3wj9ffk0=
 			</data>
 			<key>hash2</key>
 			<data>
-			bG9ssvE066nwqQITVFgtrQqOHbKhE4D1NLaFhwkBuHE=
+			cZZxhQwh7K6gIQu0qm0spjwo20JfxYIesP2UEpOd9hA=
 			</data>
 		</dict>
 		<key>ios-arm64_x86_64-simulator/PointClickSdk.framework/Headers/PointClickSdk-Swift.h</key>
@@ -319,11 +319,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			STlOYZgOTUQgUNK3mQiAHSLPLgY=
+			LGg7A3yEqYJmQpccgVqYs8jXD5w=
 			</data>
 			<key>hash2</key>
 			<data>
-			p9zMMaXLZ9qao1c0wfQ4LMDus7vhVja0rciT5UP5NhA=
+			eajdOOu9pXvOlFlzuIegU0d2B4XG5Sg0l/fRcJBeHLI=
 			</data>
 		</dict>
 		<key>ios-arm64_x86_64-simulator/PointClickSdk.framework/_CodeSignature/CodeResources</key>
