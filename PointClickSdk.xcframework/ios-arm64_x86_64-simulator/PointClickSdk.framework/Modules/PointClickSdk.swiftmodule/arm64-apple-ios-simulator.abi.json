@@ -27,6 +27,13 @@
       },
       {
         "kind": "Import",
+        "name": "UIKit",
+        "printedName": "UIKit",
+        "declKind": "Import",
+        "moduleName": "PointClickSdk"
+      },
+      {
+        "kind": "Import",
         "name": "Foundation",
         "printedName": "Foundation",
         "declKind": "Import",
@@ -413,6 +420,13 @@
           },
           {
             "kind": "Conformance",
+            "name": "Equatable",
+            "printedName": "Equatable",
+            "usr": "s:SQ",
+            "mangledName": "$sSQ"
+          },
+          {
+            "kind": "Conformance",
             "name": "Hashable",
             "printedName": "Hashable",
             "usr": "s:SH",
@@ -474,13 +488,6 @@
             "printedName": "SendableMetatype",
             "usr": "s:s16SendableMetatypeP",
             "mangledName": "$ss16SendableMetatypeP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "Equatable",
-            "printedName": "Equatable",
-            "usr": "s:SQ",
-            "mangledName": "$sSQ"
           }
         ]
       },
@@ -1070,6 +1077,78 @@
           },
           {
             "kind": "Function",
+            "name": "objc_initialize",
+            "printedName": "objc_initialize(appId:userId:gender:birthYear:completion:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "PointClickUserGender",
+                "printedName": "PointClickSdk.PointClickUserGender",
+                "usr": "c:@M@PointClickSdk@E@PCUserGender"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Int",
+                "printedName": "Swift.Int",
+                "usr": "s:Si"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "(() -> ())?",
+                "children": [
+                  {
+                    "kind": "TypeFunc",
+                    "name": "Function",
+                    "printedName": "() -> ()",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Void",
+                        "printedName": "()"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Void",
+                        "printedName": "()"
+                      }
+                    ]
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@PointClickSdk@objc(cs)PCPointClick(im)initializeWithAppId:userId:gender:birthYear:completion:",
+            "mangledName": "$s13PointClickSdk0aB0C15objc_initialize5appId04userG06gender9birthYear10completionySS_SSAA0aB10UserGenderOSiyycSgtF",
+            "moduleName": "PointClickSdk",
+            "objc_name": "initializeWithAppId:userId:gender:birthYear:completion:",
+            "declAttributes": [
+              "Final",
+              "AccessControl",
+              "ObjC"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
             "name": "registerWebView",
             "printedName": "registerWebView(_:)",
             "children": [
@@ -1404,52 +1483,10 @@
         "conformances": [
           {
             "kind": "Conformance",
-            "name": "_KeyValueCodingAndObserving",
-            "printedName": "_KeyValueCodingAndObserving",
-            "usr": "s:10Foundation27_KeyValueCodingAndObservingP",
-            "mangledName": "$s10Foundation27_KeyValueCodingAndObservingP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "_KeyValueCodingAndObservingPublishing",
-            "printedName": "_KeyValueCodingAndObservingPublishing",
-            "usr": "s:10Foundation37_KeyValueCodingAndObservingPublishingP",
-            "mangledName": "$s10Foundation37_KeyValueCodingAndObservingPublishingP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "CVarArg",
-            "printedName": "CVarArg",
-            "usr": "s:s7CVarArgP",
-            "mangledName": "$ss7CVarArgP"
-          },
-          {
-            "kind": "Conformance",
             "name": "Copyable",
             "printedName": "Copyable",
             "usr": "s:s8CopyableP",
             "mangledName": "$ss8CopyableP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "CustomDebugStringConvertible",
-            "printedName": "CustomDebugStringConvertible",
-            "usr": "s:s28CustomDebugStringConvertibleP",
-            "mangledName": "$ss28CustomDebugStringConvertibleP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "CustomStringConvertible",
-            "printedName": "CustomStringConvertible",
-            "usr": "s:s23CustomStringConvertibleP",
-            "mangledName": "$ss23CustomStringConvertibleP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "Equatable",
-            "printedName": "Equatable",
-            "usr": "s:SQ",
-            "mangledName": "$sSQ"
           },
           {
             "kind": "Conformance",
@@ -1460,10 +1497,52 @@
           },
           {
             "kind": "Conformance",
+            "name": "Equatable",
+            "printedName": "Equatable",
+            "usr": "s:SQ",
+            "mangledName": "$sSQ"
+          },
+          {
+            "kind": "Conformance",
             "name": "Hashable",
             "printedName": "Hashable",
             "usr": "s:SH",
             "mangledName": "$sSH"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CVarArg",
+            "printedName": "CVarArg",
+            "usr": "s:s7CVarArgP",
+            "mangledName": "$ss7CVarArgP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_KeyValueCodingAndObservingPublishing",
+            "printedName": "_KeyValueCodingAndObservingPublishing",
+            "usr": "s:10Foundation37_KeyValueCodingAndObservingPublishingP",
+            "mangledName": "$s10Foundation37_KeyValueCodingAndObservingPublishingP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_KeyValueCodingAndObserving",
+            "printedName": "_KeyValueCodingAndObserving",
+            "usr": "s:10Foundation27_KeyValueCodingAndObservingP",
+            "mangledName": "$s10Foundation27_KeyValueCodingAndObservingP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomStringConvertible",
+            "printedName": "CustomStringConvertible",
+            "usr": "s:s23CustomStringConvertibleP",
+            "mangledName": "$ss23CustomStringConvertibleP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomDebugStringConvertible",
+            "printedName": "CustomDebugStringConvertible",
+            "usr": "s:s28CustomDebugStringConvertibleP",
+            "mangledName": "$ss28CustomDebugStringConvertibleP"
           }
         ]
       },
@@ -1478,6 +1557,13 @@
         "kind": "Import",
         "name": "WebKit",
         "printedName": "WebKit",
+        "declKind": "Import",
+        "moduleName": "PointClickSdk"
+      },
+      {
+        "kind": "Import",
+        "name": "AppTrackingTransparency",
+        "printedName": "AppTrackingTransparency",
         "declKind": "Import",
         "moduleName": "PointClickSdk"
       },
@@ -1637,52 +1723,10 @@
         "conformances": [
           {
             "kind": "Conformance",
-            "name": "_KeyValueCodingAndObserving",
-            "printedName": "_KeyValueCodingAndObserving",
-            "usr": "s:10Foundation27_KeyValueCodingAndObservingP",
-            "mangledName": "$s10Foundation27_KeyValueCodingAndObservingP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "_KeyValueCodingAndObservingPublishing",
-            "printedName": "_KeyValueCodingAndObservingPublishing",
-            "usr": "s:10Foundation37_KeyValueCodingAndObservingPublishingP",
-            "mangledName": "$s10Foundation37_KeyValueCodingAndObservingPublishingP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "CVarArg",
-            "printedName": "CVarArg",
-            "usr": "s:s7CVarArgP",
-            "mangledName": "$ss7CVarArgP"
-          },
-          {
-            "kind": "Conformance",
             "name": "Copyable",
             "printedName": "Copyable",
             "usr": "s:s8CopyableP",
             "mangledName": "$ss8CopyableP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "CustomDebugStringConvertible",
-            "printedName": "CustomDebugStringConvertible",
-            "usr": "s:s28CustomDebugStringConvertibleP",
-            "mangledName": "$ss28CustomDebugStringConvertibleP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "CustomStringConvertible",
-            "printedName": "CustomStringConvertible",
-            "usr": "s:s23CustomStringConvertibleP",
-            "mangledName": "$ss23CustomStringConvertibleP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "Equatable",
-            "printedName": "Equatable",
-            "usr": "s:SQ",
-            "mangledName": "$sSQ"
           },
           {
             "kind": "Conformance",
@@ -1693,10 +1737,52 @@
           },
           {
             "kind": "Conformance",
+            "name": "Equatable",
+            "printedName": "Equatable",
+            "usr": "s:SQ",
+            "mangledName": "$sSQ"
+          },
+          {
+            "kind": "Conformance",
             "name": "Hashable",
             "printedName": "Hashable",
             "usr": "s:SH",
             "mangledName": "$sSH"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CVarArg",
+            "printedName": "CVarArg",
+            "usr": "s:s7CVarArgP",
+            "mangledName": "$ss7CVarArgP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_KeyValueCodingAndObservingPublishing",
+            "printedName": "_KeyValueCodingAndObservingPublishing",
+            "usr": "s:10Foundation37_KeyValueCodingAndObservingPublishingP",
+            "mangledName": "$s10Foundation37_KeyValueCodingAndObservingPublishingP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_KeyValueCodingAndObserving",
+            "printedName": "_KeyValueCodingAndObserving",
+            "usr": "s:10Foundation27_KeyValueCodingAndObservingP",
+            "mangledName": "$s10Foundation27_KeyValueCodingAndObservingP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomStringConvertible",
+            "printedName": "CustomStringConvertible",
+            "usr": "s:s23CustomStringConvertibleP",
+            "mangledName": "$ss23CustomStringConvertibleP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomDebugStringConvertible",
+            "printedName": "CustomDebugStringConvertible",
+            "usr": "s:s28CustomDebugStringConvertibleP",
+            "mangledName": "$ss28CustomDebugStringConvertibleP"
           }
         ]
       },
@@ -1890,17 +1976,17 @@
           },
           {
             "kind": "Conformance",
-            "name": "Equatable",
-            "printedName": "Equatable",
-            "usr": "s:SQ",
-            "mangledName": "$sSQ"
-          },
-          {
-            "kind": "Conformance",
             "name": "Escapable",
             "printedName": "Escapable",
             "usr": "s:s9EscapableP",
             "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Equatable",
+            "printedName": "Equatable",
+            "usr": "s:SQ",
+            "mangledName": "$sSQ"
           },
           {
             "kind": "Conformance",
@@ -2147,30 +2233,135 @@
     {
       "filePath": "\/Users\/runner\/work\/pointclick-sdk-ios\/pointclick-sdk-ios\/.build\/xcframework\/DerivedData-Sim\/Build\/Intermediates.noindex\/ArchiveIntermediates\/PointClickSdk\/IntermediateBuildFilesPath\/PointClickSdk.build\/Release-iphonesimulator\/PointClickSdk.build\/DerivedSources\/resource_bundle_accessor.swift",
       "kind": "StringLiteral",
-      "offset": 307,
+      "offset": 295,
       "length": 29,
       "value": "\"PointClickSdk_PointClickSdk\""
     },
     {
       "filePath": "\/Users\/runner\/work\/pointclick-sdk-ios\/pointclick-sdk-ios\/.build\/xcframework\/DerivedData-Sim\/Build\/Intermediates.noindex\/ArchiveIntermediates\/PointClickSdk\/IntermediateBuildFilesPath\/PointClickSdk.build\/Release-iphonesimulator\/PointClickSdk.build\/DerivedSources\/resource_bundle_accessor.swift",
       "kind": "Array",
-      "offset": 983,
+      "offset": 971,
       "length": 2,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/runner\/work\/pointclick-sdk-ios\/pointclick-sdk-ios\/.build\/xcframework\/DerivedData-Sim\/Build\/Intermediates.noindex\/ArchiveIntermediates\/PointClickSdk\/IntermediateBuildFilesPath\/PointClickSdk.build\/Release-iphonesimulator\/PointClickSdk.build\/DerivedSources\/resource_bundle_accessor.swift",
       "kind": "StringLiteral",
-      "offset": 1510,
+      "offset": 1498,
       "length": 9,
       "value": "\".bundle\""
     },
     {
       "filePath": "\/Users\/runner\/work\/pointclick-sdk-ios\/pointclick-sdk-ios\/.build\/xcframework\/DerivedData-Sim\/Build\/Intermediates.noindex\/ArchiveIntermediates\/PointClickSdk\/IntermediateBuildFilesPath\/PointClickSdk.build\/Release-iphonesimulator\/PointClickSdk.build\/DerivedSources\/resource_bundle_accessor.swift",
       "kind": "StringLiteral",
-      "offset": 1662,
+      "offset": 1650,
       "length": 57,
       "value": "\"unable to find bundle named PointClickSdk_PointClickSdk\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/pointclick-sdk-ios\/pointclick-sdk-ios\/Sources\/PointClickSdk\/Internal\/ATTPermissionDialog.swift",
+      "kind": "FloatLiteral",
+      "offset": 419,
+      "length": 3,
+      "value": "0.6"
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/pointclick-sdk-ios\/pointclick-sdk-ios\/Sources\/PointClickSdk\/Internal\/ATTPermissionDialog.swift",
+      "kind": "IntegerLiteral",
+      "offset": 463,
+      "length": 3,
+      "value": "280"
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/pointclick-sdk-ios\/pointclick-sdk-ios\/Sources\/PointClickSdk\/Internal\/ATTPermissionDialog.swift",
+      "kind": "IntegerLiteral",
+      "offset": 514,
+      "length": 2,
+      "value": "14"
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/pointclick-sdk-ios\/pointclick-sdk-ios\/Sources\/PointClickSdk\/Internal\/ATTPermissionDialog.swift",
+      "kind": "IntegerLiteral",
+      "offset": 562,
+      "length": 2,
+      "value": "24"
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/pointclick-sdk-ios\/pointclick-sdk-ios\/Sources\/PointClickSdk\/Internal\/ATTPermissionDialog.swift",
+      "kind": "IntegerLiteral",
+      "offset": 617,
+      "length": 2,
+      "value": "20"
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/pointclick-sdk-ios\/pointclick-sdk-ios\/Sources\/PointClickSdk\/Internal\/ATTPermissionDialog.swift",
+      "kind": "IntegerLiteral",
+      "offset": 674,
+      "length": 2,
+      "value": "24"
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/pointclick-sdk-ios\/pointclick-sdk-ios\/Sources\/PointClickSdk\/Internal\/ATTPermissionDialog.swift",
+      "kind": "IntegerLiteral",
+      "offset": 727,
+      "length": 2,
+      "value": "56"
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/pointclick-sdk-ios\/pointclick-sdk-ios\/Sources\/PointClickSdk\/Internal\/ATTPermissionDialog.swift",
+      "kind": "IntegerLiteral",
+      "offset": 769,
+      "length": 2,
+      "value": "26"
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/pointclick-sdk-ios\/pointclick-sdk-ios\/Sources\/PointClickSdk\/Internal\/ATTPermissionDialog.swift",
+      "kind": "IntegerLiteral",
+      "offset": 817,
+      "length": 2,
+      "value": "12"
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/pointclick-sdk-ios\/pointclick-sdk-ios\/Sources\/PointClickSdk\/Internal\/ATTPermissionDialog.swift",
+      "kind": "IntegerLiteral",
+      "offset": 869,
+      "length": 2,
+      "value": "16"
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/pointclick-sdk-ios\/pointclick-sdk-ios\/Sources\/PointClickSdk\/Internal\/ATTPermissionDialog.swift",
+      "kind": "FloatLiteral",
+      "offset": 919,
+      "length": 3,
+      "value": "0.5"
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/pointclick-sdk-ios\/pointclick-sdk-ios\/Sources\/PointClickSdk\/Internal\/ATTPermissionDialog.swift",
+      "kind": "IntegerLiteral",
+      "offset": 966,
+      "length": 2,
+      "value": "50"
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/pointclick-sdk-ios\/pointclick-sdk-ios\/Sources\/PointClickSdk\/Internal\/ATTPermissionDialog.swift",
+      "kind": "IntegerLiteral",
+      "offset": 1014,
+      "length": 2,
+      "value": "17"
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/pointclick-sdk-ios\/pointclick-sdk-ios\/Sources\/PointClickSdk\/Internal\/ATTPermissionDialog.swift",
+      "kind": "IntegerLiteral",
+      "offset": 1063,
+      "length": 2,
+      "value": "13"
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/pointclick-sdk-ios\/pointclick-sdk-ios\/Sources\/PointClickSdk\/Internal\/ATTPermissionDialog.swift",
+      "kind": "IntegerLiteral",
+      "offset": 1111,
+      "length": 2,
+      "value": "16"
     },
     {
       "filePath": "\/Users\/runner\/work\/pointclick-sdk-ios\/pointclick-sdk-ios\/Sources\/PointClickSdk\/Internal\/Mediation\/LevelPlayAdapter.swift",
@@ -2365,6 +2556,20 @@
       "filePath": "\/Users\/runner\/work\/pointclick-sdk-ios\/pointclick-sdk-ios\/Sources\/PointClickSdk\/PointClickSdk.swift",
       "kind": "BooleanLiteral",
       "offset": 1242,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/pointclick-sdk-ios\/pointclick-sdk-ios\/Sources\/PointClickSdk\/PointClickUI.swift",
+      "kind": "BooleanLiteral",
+      "offset": 14470,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/pointclick-sdk-ios\/pointclick-sdk-ios\/Sources\/PointClickSdk\/PointClickUI.swift",
+      "kind": "BooleanLiteral",
+      "offset": 14726,
       "length": 5,
       "value": "false"
     },

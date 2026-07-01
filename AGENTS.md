@@ -93,13 +93,15 @@ PointClick.shared.initialize(appId: "APP_ID") {
     // 로그인 완료 후 setUser() 호출 필요
 }
 
-// 선택 파라미터 포함
+// 선택 파라미터 포함 (completion 생략 가능)
 PointClick.shared.initialize(
     appId: "APP_ID",
     userId: "USER_ID",
     gender: .male,
     birthYear: 1990
-)
+) {
+    // 초기화 완료 — 이제 SDK 사용 가능
+}
 ```
 
 **Objective-C:**
@@ -119,11 +121,14 @@ PointClick.shared.initialize(
     // 초기화 완료 — 로그인 후 setUser 호출 필요
 }];
 
-// 선택 파라미터 포함 (completion 없이)
+// 선택 파라미터 포함
 [[PCPointClick shared] initializeWithAppId:@"APP_ID"
                                     userId:@"USER_ID"
                                     gender:PCUserGenderMale
-                                 birthYear:1990];
+                                 birthYear:1990
+                                completion:^{
+    // 초기화 완료 — 이제 SDK 사용 가능
+}];
 ```
 
 #### 파라미터
@@ -206,6 +211,10 @@ PCPointClickUI *ui = [[PCPointClickUI alloc] init];
 ### 4. Shortcut 브릿지 (매체 WebView 연동)
 
 앱이 소유한 WKWebView 에서 PointClick Web SDK(`pointclick-web-sdk.js`)의 Shortcut 광고를 표시할 수 있습니다.
+
+> `registerWebView` 호출 전에 다음 조건이 충족되어야 합니다:
+> 1. `initialize`의 `completion` 콜백이 호출된 상태 (초기화 완료)
+> 2. `userId`가 설정된 상태 (`initialize` 시 전달 또는 `setUser` 호출)
 
 **Swift (UIKit):**
 ```swift
