@@ -15,7 +15,7 @@ PointClick 서비스를 앱에 통합하는 iOS SDK 입니다.
 
 ```swift
 dependencies: [
-    .package(url: "https://github.com/pointclick-sdk/pointclick-sdk-ios.git", from: "1.0.0")
+    .package(url: "https://github.com/pointclick-sdk/pointclick-sdk-ios.git", from: "1.0.1")
 ]
 ```
 
@@ -23,7 +23,7 @@ dependencies: [
 
 | 클래스 | 역할 |
 |--------|------|
-| `PointClick` | 싱글톤. SDK 초기화 (`initialize`), Shortcut 브릿지 등록 (`registerWebView` / `unregisterWebView`) |
+| `PointClick` | 싱글톤. SDK 초기화 (`initialize`), 사용자 설정 (`setUser`), Shortcut 브릿지 등록 (`registerWebView` / `unregisterWebView`) |
 | `PointClickView` | SwiftUI View (`UIViewControllerRepresentable`) |
 | `PointClickUI` | UIKit UI 진입점 (`show`, `createViewController`) |
 | `PointClickUserGender` | 성별 enum (`.male`, `.female`) |
@@ -70,12 +70,28 @@ ATTrackingManager.requestTrackingAuthorization { status in
 
 `PointClick.shared.initialize()` 를 앱 시작 시 호출합니다. 다른 SDK 기능을 사용하기 전에 반드시 호출해야 합니다.
 
+`initialize` 는 내부적으로 디바이스 정보(IDFA, IP 등)를 비동기로 수집하며,
+수집이 완료되면 `completion` 이 메인 스레드에서 호출됩니다.
+
+> **주의**: `initialize` 는 비동기 동작입니다. `completion` 콜백이 호출되기 전에
+> `setUser`, `registerWebView`, `show` 등을 호출하면 디바이스 정보(IDFA 등)가 수집되지 않은 상태이므로
+> 400 Bad Request 에러 및 광고 노출 차단이 발생할 수 있습니다.
+> 반드시 `completion` 콜백 내에서 다음 단계를 진행해야 합니다.
+
 **Swift:**
 ```swift
 import PointClickSdk
 
-// 필수 파라미터만
-PointClick.shared.initialize(appId: "APP_ID", userId: "USER_ID")
+// Case 1: 로그인 필수 앱 — userId 를 함께 전달
+PointClick.shared.initialize(appId: "APP_ID", userId: "USER_ID") {
+    // 초기화 완료 — 이제 registerWebView / show 등 사용 가능
+}
+
+// Case 2: 비로그인 앱 — userId 없이 초기화, 로그인 후 setUser 호출
+PointClick.shared.initialize(appId: "APP_ID") {
+    // 초기화 완료 — userId 가 설정되지 않았으므로 광고 표시 불가
+    // 로그인 완료 후 setUser() 호출 필요
+}
 
 // 선택 파라미터 포함
 PointClick.shared.initialize(
@@ -90,8 +106,20 @@ PointClick.shared.initialize(
 ```objc
 @import PointClickSdk;
 
-[[PCPointClick shared] initializeWithAppId:@"APP_ID" userId:@"USER_ID"];
+// Case 1: 로그인 필수 앱
+[[PCPointClick shared] initializeWithAppId:@"APP_ID"
+                                    userId:@"USER_ID"
+                                completion:^{
+    // 초기화 완료
+}];
 
+// Case 2: 비로그인 앱
+[[PCPointClick shared] initializeWithAppId:@"APP_ID"
+                                completion:^{
+    // 초기화 완료 — 로그인 후 setUser 호출 필요
+}];
+
+// 선택 파라미터 포함 (completion 없이)
 [[PCPointClick shared] initializeWithAppId:@"APP_ID"
                                     userId:@"USER_ID"
                                     gender:PCUserGenderMale
@@ -103,11 +131,42 @@ PointClick.shared.initialize(
 | 구분 | 파라미터 | 타입 | 설명 |
 |------|---------|------|------|
 | 필수 | `appId` | `String` | 앱 고유 식별자 |
-| 필수 | `userId` | `String` | 사용자 고유 식별자 |
+| 선택 | `userId` | `String` | 사용자 고유 식별자. 비로그인 앱은 생략 후 `setUser` 로 나중에 설정 |
 | 선택 | `gender` | `PointClickUserGender` | `.male` 또는 `.female` |
 | 선택 | `birthYear` | `Int` | 출생 연도 (YYYY) |
+| 선택 | `completion` | `(() -> Void)?` | 초기화 완료 시 메인 스레드에서 호출되는 콜백 |
 
-### 2. UI 표시
+### 2. 사용자 설정 (setUser)
+
+비로그인 상태에서 SDK 를 초기화한 앱은, 로그인 완료 후 `setUser` 를 호출하여 사용자를 설정합니다.
+
+> `setUser` 는 `initialize` 의 `completion` 콜백이 호출된 후 (`isInitialized == true`) 에만 호출할 수 있습니다.
+> 초기화가 완료되지 않은 상태에서 호출하면 무시됩니다.
+> 이미 `registerWebView` 로 브릿지가 등록된 경우, 사용자 변경을 WebView 에 반영하려면
+> WebView 를 reload 해야 합니다 (Web SDK 가 `window.PointClickSdkInfo` 를 초기 로드 시 캐싱하기 때문).
+
+**Swift:**
+```swift
+// 로그인 완료 시 — 반드시 isInitialized 확인 후 호출
+guard PointClick.shared.isInitialized else { return }
+PointClick.shared.setUser(userId: "USER_ID")
+
+// 프로필 정보도 함께 설정
+PointClick.shared.setUser(userId: "USER_ID", gender: .female, birthYear: 1995)
+```
+
+**Objective-C:**
+```objc
+// 로그인 완료 시 — 반드시 isInitialized 확인 후 호출
+if ([PCPointClick shared].isInitialized) {
+    [[PCPointClick shared] setUserWithUserId:@"USER_ID"];
+}
+
+// 프로필 정보도 함께 설정
+[[PCPointClick shared] setUserWithUserId:@"USER_ID" gender:PCUserGenderFemale birthYear:1995];
+```
+
+### 3. UI 표시
 
 **SwiftUI:**
 ```swift
@@ -144,7 +203,7 @@ PCPointClickUI *ui = [[PCPointClickUI alloc] init];
 [ui showOn:viewController];
 ```
 
-### 3. Shortcut 브릿지 (매체 WebView 연동)
+### 4. Shortcut 브릿지 (매체 WebView 연동)
 
 앱이 소유한 WKWebView 에서 PointClick Web SDK(`pointclick-web-sdk.js`)의 Shortcut 광고를 표시할 수 있습니다.
 

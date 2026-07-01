@@ -413,13 +413,6 @@
           },
           {
             "kind": "Conformance",
-            "name": "Equatable",
-            "printedName": "Equatable",
-            "usr": "s:SQ",
-            "mangledName": "$sSQ"
-          },
-          {
-            "kind": "Conformance",
             "name": "Hashable",
             "printedName": "Hashable",
             "usr": "s:SH",
@@ -481,6 +474,13 @@
             "printedName": "SendableMetatype",
             "usr": "s:s16SendableMetatypeP",
             "mangledName": "$ss16SendableMetatypeP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Equatable",
+            "printedName": "Equatable",
+            "usr": "s:SQ",
+            "mangledName": "$sSQ"
           }
         ]
       },
@@ -746,7 +746,7 @@
           {
             "kind": "Function",
             "name": "initialize",
-            "printedName": "initialize(appId:userId:gender:birthYear:)",
+            "printedName": "initialize(appId:userId:gender:birthYear:completion:)",
             "children": [
               {
                 "kind": "TypeNominal",
@@ -761,9 +761,18 @@
               },
               {
                 "kind": "TypeNominal",
-                "name": "String",
-                "printedName": "Swift.String",
-                "usr": "s:SS"
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "hasDefaultArg": true,
+                "usr": "s:Sq"
               },
               {
                 "kind": "TypeNominal",
@@ -794,15 +803,71 @@
                 ],
                 "hasDefaultArg": true,
                 "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "(() -> ())?",
+                "children": [
+                  {
+                    "kind": "TypeFunc",
+                    "name": "Function",
+                    "printedName": "() -> ()",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Void",
+                        "printedName": "()"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Void",
+                        "printedName": "()"
+                      }
+                    ]
+                  }
+                ],
+                "hasDefaultArg": true,
+                "usr": "s:Sq"
               }
             ],
             "declKind": "Func",
-            "usr": "s:13PointClickSdk0aB0C10initialize5appId04userF06gender9birthYearySS_SSAA0aB10UserGenderOSgSiSgtF",
-            "mangledName": "$s13PointClickSdk0aB0C10initialize5appId04userF06gender9birthYearySS_SSAA0aB10UserGenderOSgSiSgtF",
+            "usr": "s:13PointClickSdk0aB0C10initialize5appId04userF06gender9birthYear10completionySS_SSSgAA0aB10UserGenderOSgSiSgyycSgtF",
+            "mangledName": "$s13PointClickSdk0aB0C10initialize5appId04userF06gender9birthYear10completionySS_SSSgAA0aB10UserGenderOSgSiSgyycSgtF",
             "moduleName": "PointClickSdk",
             "declAttributes": [
               "Final",
               "AccessControl",
+              "RawDocComment"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "objc_initialize",
+            "printedName": "objc_initialize(appId:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@PointClickSdk@objc(cs)PCPointClick(im)initializeWithAppId:",
+            "mangledName": "$s13PointClickSdk0aB0C15objc_initialize5appIdySS_tF",
+            "moduleName": "PointClickSdk",
+            "objc_name": "initializeWithAppId:",
+            "declAttributes": [
+              "Final",
+              "AccessControl",
+              "ObjC",
               "RawDocComment"
             ],
             "funcSelfKind": "NonMutating"
@@ -838,8 +903,7 @@
             "declAttributes": [
               "Final",
               "AccessControl",
-              "ObjC",
-              "RawDocComment"
+              "ObjC"
             ],
             "funcSelfKind": "NonMutating"
           },
@@ -883,6 +947,120 @@
             "mangledName": "$s13PointClickSdk0aB0C15objc_initialize5appId04userG06gender9birthYearySS_SSAA0aB10UserGenderOSitF",
             "moduleName": "PointClickSdk",
             "objc_name": "initializeWithAppId:userId:gender:birthYear:",
+            "declAttributes": [
+              "Final",
+              "AccessControl",
+              "ObjC"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "objc_initialize",
+            "printedName": "objc_initialize(appId:completion:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "(() -> ())?",
+                "children": [
+                  {
+                    "kind": "TypeFunc",
+                    "name": "Function",
+                    "printedName": "() -> ()",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Void",
+                        "printedName": "()"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Void",
+                        "printedName": "()"
+                      }
+                    ]
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@PointClickSdk@objc(cs)PCPointClick(im)initializeWithAppId:completion:",
+            "mangledName": "$s13PointClickSdk0aB0C15objc_initialize5appId10completionySS_yycSgtF",
+            "moduleName": "PointClickSdk",
+            "objc_name": "initializeWithAppId:completion:",
+            "declAttributes": [
+              "Final",
+              "AccessControl",
+              "ObjC"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "objc_initialize",
+            "printedName": "objc_initialize(appId:userId:completion:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "(() -> ())?",
+                "children": [
+                  {
+                    "kind": "TypeFunc",
+                    "name": "Function",
+                    "printedName": "() -> ()",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Void",
+                        "printedName": "()"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Void",
+                        "printedName": "()"
+                      }
+                    ]
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@PointClickSdk@objc(cs)PCPointClick(im)initializeWithAppId:userId:completion:",
+            "mangledName": "$s13PointClickSdk0aB0C15objc_initialize5appId04userG010completionySS_SSyycSgtF",
+            "moduleName": "PointClickSdk",
+            "objc_name": "initializeWithAppId:userId:completion:",
             "declAttributes": [
               "Final",
               "AccessControl",
@@ -1052,6 +1230,158 @@
               "RawDocComment"
             ],
             "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "setUser",
+            "printedName": "setUser(userId:gender:birthYear:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "PointClickSdk.PointClickUserGender?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "PointClickUserGender",
+                    "printedName": "PointClickSdk.PointClickUserGender",
+                    "usr": "c:@M@PointClickSdk@E@PCUserGender"
+                  }
+                ],
+                "hasDefaultArg": true,
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.Int?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Int",
+                    "printedName": "Swift.Int",
+                    "usr": "s:Si"
+                  }
+                ],
+                "hasDefaultArg": true,
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:13PointClickSdk0aB0C7setUser6userId6gender9birthYearySS_AA0abE6GenderOSgSiSgtF",
+            "mangledName": "$s13PointClickSdk0aB0C7setUser6userId6gender9birthYearySS_AA0abE6GenderOSgSiSgtF",
+            "moduleName": "PointClickSdk",
+            "declAttributes": [
+              "Final",
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "objc_setUser",
+            "printedName": "objc_setUser(userId:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@PointClickSdk@objc(cs)PCPointClick(im)setUserWithUserId:",
+            "mangledName": "$s13PointClickSdk0aB0C12objc_setUser6userIdySS_tF",
+            "moduleName": "PointClickSdk",
+            "objc_name": "setUserWithUserId:",
+            "declAttributes": [
+              "Final",
+              "AccessControl",
+              "ObjC",
+              "RawDocComment"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "objc_setUser",
+            "printedName": "objc_setUser(userId:gender:birthYear:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "PointClickUserGender",
+                "printedName": "PointClickSdk.PointClickUserGender",
+                "usr": "c:@M@PointClickSdk@E@PCUserGender"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Int",
+                "printedName": "Swift.Int",
+                "usr": "s:Si"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@PointClickSdk@objc(cs)PCPointClick(im)setUserWithUserId:gender:birthYear:",
+            "mangledName": "$s13PointClickSdk0aB0C12objc_setUser6userId6gender9birthYearySS_AA0abF6GenderOSitF",
+            "moduleName": "PointClickSdk",
+            "objc_name": "setUserWithUserId:gender:birthYear:",
+            "declAttributes": [
+              "Final",
+              "AccessControl",
+              "ObjC"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "clearUser",
+            "printedName": "clearUser()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@PointClickSdk@objc(cs)PCPointClick(im)clearUser",
+            "mangledName": "$s13PointClickSdk0aB0C9clearUseryyF",
+            "moduleName": "PointClickSdk",
+            "declAttributes": [
+              "Final",
+              "AccessControl",
+              "ObjC",
+              "RawDocComment"
+            ],
+            "funcSelfKind": "NonMutating"
           }
         ],
         "declKind": "Class",
@@ -1074,38 +1404,10 @@
         "conformances": [
           {
             "kind": "Conformance",
-            "name": "Copyable",
-            "printedName": "Copyable",
-            "usr": "s:s8CopyableP",
-            "mangledName": "$ss8CopyableP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "Escapable",
-            "printedName": "Escapable",
-            "usr": "s:s9EscapableP",
-            "mangledName": "$ss9EscapableP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "Equatable",
-            "printedName": "Equatable",
-            "usr": "s:SQ",
-            "mangledName": "$sSQ"
-          },
-          {
-            "kind": "Conformance",
-            "name": "Hashable",
-            "printedName": "Hashable",
-            "usr": "s:SH",
-            "mangledName": "$sSH"
-          },
-          {
-            "kind": "Conformance",
-            "name": "CVarArg",
-            "printedName": "CVarArg",
-            "usr": "s:s7CVarArgP",
-            "mangledName": "$ss7CVarArgP"
+            "name": "_KeyValueCodingAndObserving",
+            "printedName": "_KeyValueCodingAndObserving",
+            "usr": "s:10Foundation27_KeyValueCodingAndObservingP",
+            "mangledName": "$s10Foundation27_KeyValueCodingAndObservingP"
           },
           {
             "kind": "Conformance",
@@ -1116,10 +1418,24 @@
           },
           {
             "kind": "Conformance",
-            "name": "_KeyValueCodingAndObserving",
-            "printedName": "_KeyValueCodingAndObserving",
-            "usr": "s:10Foundation27_KeyValueCodingAndObservingP",
-            "mangledName": "$s10Foundation27_KeyValueCodingAndObservingP"
+            "name": "CVarArg",
+            "printedName": "CVarArg",
+            "usr": "s:s7CVarArgP",
+            "mangledName": "$ss7CVarArgP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomDebugStringConvertible",
+            "printedName": "CustomDebugStringConvertible",
+            "usr": "s:s28CustomDebugStringConvertibleP",
+            "mangledName": "$ss28CustomDebugStringConvertibleP"
           },
           {
             "kind": "Conformance",
@@ -1130,10 +1446,24 @@
           },
           {
             "kind": "Conformance",
-            "name": "CustomDebugStringConvertible",
-            "printedName": "CustomDebugStringConvertible",
-            "usr": "s:s28CustomDebugStringConvertibleP",
-            "mangledName": "$ss28CustomDebugStringConvertibleP"
+            "name": "Equatable",
+            "printedName": "Equatable",
+            "usr": "s:SQ",
+            "mangledName": "$sSQ"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Hashable",
+            "printedName": "Hashable",
+            "usr": "s:SH",
+            "mangledName": "$sSH"
           }
         ]
       },
@@ -1307,38 +1637,10 @@
         "conformances": [
           {
             "kind": "Conformance",
-            "name": "Copyable",
-            "printedName": "Copyable",
-            "usr": "s:s8CopyableP",
-            "mangledName": "$ss8CopyableP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "Escapable",
-            "printedName": "Escapable",
-            "usr": "s:s9EscapableP",
-            "mangledName": "$ss9EscapableP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "Equatable",
-            "printedName": "Equatable",
-            "usr": "s:SQ",
-            "mangledName": "$sSQ"
-          },
-          {
-            "kind": "Conformance",
-            "name": "Hashable",
-            "printedName": "Hashable",
-            "usr": "s:SH",
-            "mangledName": "$sSH"
-          },
-          {
-            "kind": "Conformance",
-            "name": "CVarArg",
-            "printedName": "CVarArg",
-            "usr": "s:s7CVarArgP",
-            "mangledName": "$ss7CVarArgP"
+            "name": "_KeyValueCodingAndObserving",
+            "printedName": "_KeyValueCodingAndObserving",
+            "usr": "s:10Foundation27_KeyValueCodingAndObservingP",
+            "mangledName": "$s10Foundation27_KeyValueCodingAndObservingP"
           },
           {
             "kind": "Conformance",
@@ -1349,10 +1651,24 @@
           },
           {
             "kind": "Conformance",
-            "name": "_KeyValueCodingAndObserving",
-            "printedName": "_KeyValueCodingAndObserving",
-            "usr": "s:10Foundation27_KeyValueCodingAndObservingP",
-            "mangledName": "$s10Foundation27_KeyValueCodingAndObservingP"
+            "name": "CVarArg",
+            "printedName": "CVarArg",
+            "usr": "s:s7CVarArgP",
+            "mangledName": "$ss7CVarArgP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomDebugStringConvertible",
+            "printedName": "CustomDebugStringConvertible",
+            "usr": "s:s28CustomDebugStringConvertibleP",
+            "mangledName": "$ss28CustomDebugStringConvertibleP"
           },
           {
             "kind": "Conformance",
@@ -1363,10 +1679,24 @@
           },
           {
             "kind": "Conformance",
-            "name": "CustomDebugStringConvertible",
-            "printedName": "CustomDebugStringConvertible",
-            "usr": "s:s28CustomDebugStringConvertibleP",
-            "mangledName": "$ss28CustomDebugStringConvertibleP"
+            "name": "Equatable",
+            "printedName": "Equatable",
+            "usr": "s:SQ",
+            "mangledName": "$sSQ"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Hashable",
+            "printedName": "Hashable",
+            "usr": "s:SH",
+            "mangledName": "$sSH"
           }
         ]
       },
@@ -1560,17 +1890,17 @@
           },
           {
             "kind": "Conformance",
-            "name": "Escapable",
-            "printedName": "Escapable",
-            "usr": "s:s9EscapableP",
-            "mangledName": "$ss9EscapableP"
-          },
-          {
-            "kind": "Conformance",
             "name": "Equatable",
             "printedName": "Equatable",
             "usr": "s:SQ",
             "mangledName": "$sSQ"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
           },
           {
             "kind": "Conformance",
@@ -1817,28 +2147,28 @@
     {
       "filePath": "\/Users\/runner\/work\/pointclick-sdk-ios\/pointclick-sdk-ios\/.build\/xcframework\/DerivedData-Sim\/Build\/Intermediates.noindex\/ArchiveIntermediates\/PointClickSdk\/IntermediateBuildFilesPath\/PointClickSdk.build\/Release-iphonesimulator\/PointClickSdk.build\/DerivedSources\/resource_bundle_accessor.swift",
       "kind": "StringLiteral",
-      "offset": 295,
+      "offset": 307,
       "length": 29,
       "value": "\"PointClickSdk_PointClickSdk\""
     },
     {
       "filePath": "\/Users\/runner\/work\/pointclick-sdk-ios\/pointclick-sdk-ios\/.build\/xcframework\/DerivedData-Sim\/Build\/Intermediates.noindex\/ArchiveIntermediates\/PointClickSdk\/IntermediateBuildFilesPath\/PointClickSdk.build\/Release-iphonesimulator\/PointClickSdk.build\/DerivedSources\/resource_bundle_accessor.swift",
       "kind": "Array",
-      "offset": 971,
+      "offset": 983,
       "length": 2,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/runner\/work\/pointclick-sdk-ios\/pointclick-sdk-ios\/.build\/xcframework\/DerivedData-Sim\/Build\/Intermediates.noindex\/ArchiveIntermediates\/PointClickSdk\/IntermediateBuildFilesPath\/PointClickSdk.build\/Release-iphonesimulator\/PointClickSdk.build\/DerivedSources\/resource_bundle_accessor.swift",
       "kind": "StringLiteral",
-      "offset": 1498,
+      "offset": 1510,
       "length": 9,
       "value": "\".bundle\""
     },
     {
       "filePath": "\/Users\/runner\/work\/pointclick-sdk-ios\/pointclick-sdk-ios\/.build\/xcframework\/DerivedData-Sim\/Build\/Intermediates.noindex\/ArchiveIntermediates\/PointClickSdk\/IntermediateBuildFilesPath\/PointClickSdk.build\/Release-iphonesimulator\/PointClickSdk.build\/DerivedSources\/resource_bundle_accessor.swift",
       "kind": "StringLiteral",
-      "offset": 1650,
+      "offset": 1662,
       "length": 57,
       "value": "\"unable to find bundle named PointClickSdk_PointClickSdk\""
     },
