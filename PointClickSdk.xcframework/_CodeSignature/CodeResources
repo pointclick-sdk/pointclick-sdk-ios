@@ -6,247 +6,335 @@
 	<dict>
 		<key>ios-arm64/PointClickSdk.framework/Headers/PointClickSdk-Swift.h</key>
 		<data>
-		eUrH/5+3pjivuwVZSZv3SLjptwQ=
+		vF+goeGXbrTXIzMuy5z8T66GEVs=
 		</data>
 		<key>ios-arm64/PointClickSdk.framework/Info.plist</key>
 		<data>
-		htbl63b3EqkygnVnhXnR72maLWc=
+		lNt3HjSkupwWRkFBiMNYrMIMPFU=
 		</data>
 		<key>ios-arm64/PointClickSdk.framework/Modules/PointClickSdk.swiftmodule/arm64-apple-ios.abi.json</key>
 		<data>
-		A9QDzdH+Y5Dg70StGEPvt3WWmMA=
+		0tridNkSBBoQmkdhq1ydZy/win8=
 		</data>
 		<key>ios-arm64/PointClickSdk.framework/Modules/PointClickSdk.swiftmodule/arm64-apple-ios.package.swiftinterface</key>
 		<data>
-		WGDtzdNZ7hnPWQqbhpzx5fsvI9M=
+		DO121+2C2D4e3MIY/JOyo1UivaQ=
 		</data>
 		<key>ios-arm64/PointClickSdk.framework/Modules/PointClickSdk.swiftmodule/arm64-apple-ios.private.swiftinterface</key>
 		<data>
-		WGDtzdNZ7hnPWQqbhpzx5fsvI9M=
+		DO121+2C2D4e3MIY/JOyo1UivaQ=
 		</data>
 		<key>ios-arm64/PointClickSdk.framework/Modules/PointClickSdk.swiftmodule/arm64-apple-ios.swiftdoc</key>
 		<data>
-		y1yNTXq2N0Od1o+sJYNC9A9wgb0=
+		czCoc+xF5luuj0SMl/aO6kfVZSY=
 		</data>
 		<key>ios-arm64/PointClickSdk.framework/Modules/PointClickSdk.swiftmodule/arm64-apple-ios.swiftinterface</key>
 		<data>
-		WGDtzdNZ7hnPWQqbhpzx5fsvI9M=
+		DO121+2C2D4e3MIY/JOyo1UivaQ=
 		</data>
 		<key>ios-arm64/PointClickSdk.framework/PointClickSdk</key>
 		<data>
-		RvmXKzxWlpa6azJZjgOpPGi4rxY=
+		hDHKefMAI09tuzy/wKQ2i5SB6VY=
 		</data>
 		<key>ios-arm64_x86_64-simulator/PointClickSdk.framework/Headers/PointClickSdk-Swift.h</key>
 		<data>
-		eUrH/5+3pjivuwVZSZv3SLjptwQ=
+		vF+goeGXbrTXIzMuy5z8T66GEVs=
 		</data>
 		<key>ios-arm64_x86_64-simulator/PointClickSdk.framework/Info.plist</key>
 		<data>
-		LCoILVO4PtnSDcYgLSkYtEi56sY=
+		oqVgjBfs2UbbDJ/JNnWXPsfcqRg=
 		</data>
 		<key>ios-arm64_x86_64-simulator/PointClickSdk.framework/Modules/PointClickSdk.swiftmodule/arm64-apple-ios-simulator.abi.json</key>
 		<data>
-		+tKXwCOaFFIEGOWsLrEgyfk1Wac=
+		zXmMd2W74BgFGV3oEa8Hij1bcBs=
 		</data>
 		<key>ios-arm64_x86_64-simulator/PointClickSdk.framework/Modules/PointClickSdk.swiftmodule/arm64-apple-ios-simulator.package.swiftinterface</key>
 		<data>
-		pnD0ugEDARn6+E/SqNOKQzUmR0M=
+		dM5NXT1njOXIsmkbEdJCIuuPVVE=
 		</data>
 		<key>ios-arm64_x86_64-simulator/PointClickSdk.framework/Modules/PointClickSdk.swiftmodule/arm64-apple-ios-simulator.private.swiftinterface</key>
 		<data>
-		pnD0ugEDARn6+E/SqNOKQzUmR0M=
+		dM5NXT1njOXIsmkbEdJCIuuPVVE=
 		</data>
 		<key>ios-arm64_x86_64-simulator/PointClickSdk.framework/Modules/PointClickSdk.swiftmodule/arm64-apple-ios-simulator.swiftdoc</key>
 		<data>
-		t8Mpkmcp7lnQ6Vgc2XWtCdsOVRU=
+		UPxMdPxNqh19qd8pSC3Cp6sdffc=
 		</data>
 		<key>ios-arm64_x86_64-simulator/PointClickSdk.framework/Modules/PointClickSdk.swiftmodule/arm64-apple-ios-simulator.swiftinterface</key>
 		<data>
-		pnD0ugEDARn6+E/SqNOKQzUmR0M=
+		dM5NXT1njOXIsmkbEdJCIuuPVVE=
 		</data>
 		<key>ios-arm64_x86_64-simulator/PointClickSdk.framework/Modules/PointClickSdk.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
 		<data>
-		+tKXwCOaFFIEGOWsLrEgyfk1Wac=
+		zXmMd2W74BgFGV3oEa8Hij1bcBs=
 		</data>
 		<key>ios-arm64_x86_64-simulator/PointClickSdk.framework/Modules/PointClickSdk.swiftmodule/x86_64-apple-ios-simulator.package.swiftinterface</key>
 		<data>
-		S6dtXpm7Nm5I7v5rbv99/6zwf6c=
+		mnF4jhxEZN/XCBARSafaiaAQiQA=
 		</data>
 		<key>ios-arm64_x86_64-simulator/PointClickSdk.framework/Modules/PointClickSdk.swiftmodule/x86_64-apple-ios-simulator.private.swiftinterface</key>
 		<data>
-		S6dtXpm7Nm5I7v5rbv99/6zwf6c=
+		mnF4jhxEZN/XCBARSafaiaAQiQA=
 		</data>
 		<key>ios-arm64_x86_64-simulator/PointClickSdk.framework/Modules/PointClickSdk.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
 		<data>
-		XXF/JEp1Me1SqPt9DDTT41+gygg=
+		/SLoR7Tq1qfsLRwSpaR+oP8APGY=
 		</data>
 		<key>ios-arm64_x86_64-simulator/PointClickSdk.framework/Modules/PointClickSdk.swiftmodule/x86_64-apple-ios-simulator.swiftinterface</key>
 		<data>
-		S6dtXpm7Nm5I7v5rbv99/6zwf6c=
+		mnF4jhxEZN/XCBARSafaiaAQiQA=
 		</data>
 		<key>ios-arm64_x86_64-simulator/PointClickSdk.framework/PointClickSdk</key>
 		<data>
-		PSVvjW0n1aVw7G1dpZNhQtMx094=
+		EDuX9R+kYTivuF2aD+Ool7/UCEU=
 		</data>
 		<key>ios-arm64_x86_64-simulator/PointClickSdk.framework/_CodeSignature/CodeResources</key>
 		<data>
-		CTFCmS9vLkWWx0ZYfWx/W0ZLy/4=
+		qAAl+p7657+QvglTOP/VcTQBhz4=
 		</data>
 	</dict>
 	<key>files2</key>
 	<dict>
 		<key>ios-arm64/PointClickSdk.framework/Headers/PointClickSdk-Swift.h</key>
 		<dict>
+			<key>hash</key>
+			<data>
+			vF+goeGXbrTXIzMuy5z8T66GEVs=
+			</data>
 			<key>hash2</key>
 			<data>
-			Xlg/hbzMRNqryHFKVREDoqoh8SuLoQbl7NYfG0WnbSk=
+			GtCuF2o/ohapBwmqlc/0K8rlqNwMqtnmlJUtrigsQVk=
 			</data>
 		</dict>
 		<key>ios-arm64/PointClickSdk.framework/Info.plist</key>
 		<dict>
+			<key>hash</key>
+			<data>
+			lNt3HjSkupwWRkFBiMNYrMIMPFU=
+			</data>
 			<key>hash2</key>
 			<data>
-			yx8jOaIfFqljaytT4//WncL0z66lR/e8xYuGIRTjlFQ=
+			0PwfBp/IS22SLBbUVGJVNh8keup9Z9NepOV1sShuwPA=
 			</data>
 		</dict>
 		<key>ios-arm64/PointClickSdk.framework/Modules/PointClickSdk.swiftmodule/arm64-apple-ios.abi.json</key>
 		<dict>
+			<key>hash</key>
+			<data>
+			0tridNkSBBoQmkdhq1ydZy/win8=
+			</data>
 			<key>hash2</key>
 			<data>
-			T7UEnSIfGKqYrHNmRDSKIh43RP0WaNYY489mtVMDZEE=
+			mIq8VSf0aaBxZeuWIWHrt1V3jZg6mTvePwb0twZafRI=
 			</data>
 		</dict>
 		<key>ios-arm64/PointClickSdk.framework/Modules/PointClickSdk.swiftmodule/arm64-apple-ios.package.swiftinterface</key>
 		<dict>
+			<key>hash</key>
+			<data>
+			DO121+2C2D4e3MIY/JOyo1UivaQ=
+			</data>
 			<key>hash2</key>
 			<data>
-			Ypoj26Sa2nohEQdY8qxsqbCV1e0smqnVJYmlIltDlws=
+			96etDM5NdaB8JAiERNbywMZGWBs6fHfMrEjT+/HkPic=
 			</data>
 		</dict>
 		<key>ios-arm64/PointClickSdk.framework/Modules/PointClickSdk.swiftmodule/arm64-apple-ios.private.swiftinterface</key>
 		<dict>
+			<key>hash</key>
+			<data>
+			DO121+2C2D4e3MIY/JOyo1UivaQ=
+			</data>
 			<key>hash2</key>
 			<data>
-			Ypoj26Sa2nohEQdY8qxsqbCV1e0smqnVJYmlIltDlws=
+			96etDM5NdaB8JAiERNbywMZGWBs6fHfMrEjT+/HkPic=
 			</data>
 		</dict>
 		<key>ios-arm64/PointClickSdk.framework/Modules/PointClickSdk.swiftmodule/arm64-apple-ios.swiftdoc</key>
 		<dict>
+			<key>hash</key>
+			<data>
+			czCoc+xF5luuj0SMl/aO6kfVZSY=
+			</data>
 			<key>hash2</key>
 			<data>
-			GtJasGtC9JOI9+Rf66Bt6Qs+67akthsfZw3iTo9qt6c=
+			sLP8nFAD+wTMEQW0Itp35ajd2dz/A7XOJILxQzOkKcg=
 			</data>
 		</dict>
 		<key>ios-arm64/PointClickSdk.framework/Modules/PointClickSdk.swiftmodule/arm64-apple-ios.swiftinterface</key>
 		<dict>
+			<key>hash</key>
+			<data>
+			DO121+2C2D4e3MIY/JOyo1UivaQ=
+			</data>
 			<key>hash2</key>
 			<data>
-			Ypoj26Sa2nohEQdY8qxsqbCV1e0smqnVJYmlIltDlws=
+			96etDM5NdaB8JAiERNbywMZGWBs6fHfMrEjT+/HkPic=
 			</data>
 		</dict>
 		<key>ios-arm64/PointClickSdk.framework/PointClickSdk</key>
 		<dict>
+			<key>hash</key>
+			<data>
+			hDHKefMAI09tuzy/wKQ2i5SB6VY=
+			</data>
 			<key>hash2</key>
 			<data>
-			HwsI3FaAJ8nLwB/pz4BgEk3vaWucDrLezdn1JPmrTe8=
+			U7QpflFcdRYAmJ89voGHgaEGh233MNj+h3ondeMBc7M=
 			</data>
 		</dict>
 		<key>ios-arm64_x86_64-simulator/PointClickSdk.framework/Headers/PointClickSdk-Swift.h</key>
 		<dict>
+			<key>hash</key>
+			<data>
+			vF+goeGXbrTXIzMuy5z8T66GEVs=
+			</data>
 			<key>hash2</key>
 			<data>
-			Xlg/hbzMRNqryHFKVREDoqoh8SuLoQbl7NYfG0WnbSk=
+			GtCuF2o/ohapBwmqlc/0K8rlqNwMqtnmlJUtrigsQVk=
 			</data>
 		</dict>
 		<key>ios-arm64_x86_64-simulator/PointClickSdk.framework/Info.plist</key>
 		<dict>
+			<key>hash</key>
+			<data>
+			oqVgjBfs2UbbDJ/JNnWXPsfcqRg=
+			</data>
 			<key>hash2</key>
 			<data>
-			BYuZjaIyy2ko5j8b1zUNHFrH0JJRIQst6pq0zl/3AQM=
+			iNs7efxxvM7X2HMq699PQD1Iz05VAl0WhaM1jBbZSwQ=
 			</data>
 		</dict>
 		<key>ios-arm64_x86_64-simulator/PointClickSdk.framework/Modules/PointClickSdk.swiftmodule/arm64-apple-ios-simulator.abi.json</key>
 		<dict>
+			<key>hash</key>
+			<data>
+			zXmMd2W74BgFGV3oEa8Hij1bcBs=
+			</data>
 			<key>hash2</key>
 			<data>
-			2UBDI11y4DEsQXFVLgwxJqeeUq8hUw6X0jaaTA+AXhI=
+			H1H4nHwlwdR+l/L7nmypULfIFBlEmtyYDhUi/crut+o=
 			</data>
 		</dict>
 		<key>ios-arm64_x86_64-simulator/PointClickSdk.framework/Modules/PointClickSdk.swiftmodule/arm64-apple-ios-simulator.package.swiftinterface</key>
 		<dict>
+			<key>hash</key>
+			<data>
+			dM5NXT1njOXIsmkbEdJCIuuPVVE=
+			</data>
 			<key>hash2</key>
 			<data>
-			TADcOlyPDLYkClPE/FtiQoUPQ4qezds0B6mKdpevxWI=
+			6swBN4IbTK6c3j3vlUfgbRCIMdDL4R/mRIu3noXdtwM=
 			</data>
 		</dict>
 		<key>ios-arm64_x86_64-simulator/PointClickSdk.framework/Modules/PointClickSdk.swiftmodule/arm64-apple-ios-simulator.private.swiftinterface</key>
 		<dict>
+			<key>hash</key>
+			<data>
+			dM5NXT1njOXIsmkbEdJCIuuPVVE=
+			</data>
 			<key>hash2</key>
 			<data>
-			TADcOlyPDLYkClPE/FtiQoUPQ4qezds0B6mKdpevxWI=
+			6swBN4IbTK6c3j3vlUfgbRCIMdDL4R/mRIu3noXdtwM=
 			</data>
 		</dict>
 		<key>ios-arm64_x86_64-simulator/PointClickSdk.framework/Modules/PointClickSdk.swiftmodule/arm64-apple-ios-simulator.swiftdoc</key>
 		<dict>
+			<key>hash</key>
+			<data>
+			UPxMdPxNqh19qd8pSC3Cp6sdffc=
+			</data>
 			<key>hash2</key>
 			<data>
-			wWB5Do1OHgzOIxypWw4wgFuKcwR0oA9Teme/w3Bx+PA=
+			Mrb8MWpAHbxP7Sb75+PQSK/ftqhmyGcQRB850G1l8qg=
 			</data>
 		</dict>
 		<key>ios-arm64_x86_64-simulator/PointClickSdk.framework/Modules/PointClickSdk.swiftmodule/arm64-apple-ios-simulator.swiftinterface</key>
 		<dict>
+			<key>hash</key>
+			<data>
+			dM5NXT1njOXIsmkbEdJCIuuPVVE=
+			</data>
 			<key>hash2</key>
 			<data>
-			TADcOlyPDLYkClPE/FtiQoUPQ4qezds0B6mKdpevxWI=
+			6swBN4IbTK6c3j3vlUfgbRCIMdDL4R/mRIu3noXdtwM=
 			</data>
 		</dict>
 		<key>ios-arm64_x86_64-simulator/PointClickSdk.framework/Modules/PointClickSdk.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
 		<dict>
+			<key>hash</key>
+			<data>
+			zXmMd2W74BgFGV3oEa8Hij1bcBs=
+			</data>
 			<key>hash2</key>
 			<data>
-			2UBDI11y4DEsQXFVLgwxJqeeUq8hUw6X0jaaTA+AXhI=
+			H1H4nHwlwdR+l/L7nmypULfIFBlEmtyYDhUi/crut+o=
 			</data>
 		</dict>
 		<key>ios-arm64_x86_64-simulator/PointClickSdk.framework/Modules/PointClickSdk.swiftmodule/x86_64-apple-ios-simulator.package.swiftinterface</key>
 		<dict>
+			<key>hash</key>
+			<data>
+			mnF4jhxEZN/XCBARSafaiaAQiQA=
+			</data>
 			<key>hash2</key>
 			<data>
-			LyjXIr9IfIEMJuKLTuVHpaP/e67wDxQ5BIKEdUIhbsk=
+			tuEL5WQsVRt5240XcphJlP6U14F98nExnEuVIEcPR/Q=
 			</data>
 		</dict>
 		<key>ios-arm64_x86_64-simulator/PointClickSdk.framework/Modules/PointClickSdk.swiftmodule/x86_64-apple-ios-simulator.private.swiftinterface</key>
 		<dict>
+			<key>hash</key>
+			<data>
+			mnF4jhxEZN/XCBARSafaiaAQiQA=
+			</data>
 			<key>hash2</key>
 			<data>
-			LyjXIr9IfIEMJuKLTuVHpaP/e67wDxQ5BIKEdUIhbsk=
+			tuEL5WQsVRt5240XcphJlP6U14F98nExnEuVIEcPR/Q=
 			</data>
 		</dict>
 		<key>ios-arm64_x86_64-simulator/PointClickSdk.framework/Modules/PointClickSdk.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
 		<dict>
+			<key>hash</key>
+			<data>
+			/SLoR7Tq1qfsLRwSpaR+oP8APGY=
+			</data>
 			<key>hash2</key>
 			<data>
-			G61vjVvH5j3vzD4J8JdGS0Boaa+6wItbqt4E+08upXQ=
+			r00qEf6NDqg512p6TNcZqsR2x8dz+HeB0+TUn1R8RF0=
 			</data>
 		</dict>
 		<key>ios-arm64_x86_64-simulator/PointClickSdk.framework/Modules/PointClickSdk.swiftmodule/x86_64-apple-ios-simulator.swiftinterface</key>
 		<dict>
+			<key>hash</key>
+			<data>
+			mnF4jhxEZN/XCBARSafaiaAQiQA=
+			</data>
 			<key>hash2</key>
 			<data>
-			LyjXIr9IfIEMJuKLTuVHpaP/e67wDxQ5BIKEdUIhbsk=
+			tuEL5WQsVRt5240XcphJlP6U14F98nExnEuVIEcPR/Q=
 			</data>
 		</dict>
 		<key>ios-arm64_x86_64-simulator/PointClickSdk.framework/PointClickSdk</key>
 		<dict>
+			<key>hash</key>
+			<data>
+			EDuX9R+kYTivuF2aD+Ool7/UCEU=
+			</data>
 			<key>hash2</key>
 			<data>
-			snvTQe/wWoyXUTndkdbmd+vNycFrd8cbd8Wk7DX2nvU=
+			5HF1StErpfNIURKpR9bfeoZKiANdgs1x5zEpOmquFNM=
 			</data>
 		</dict>
 		<key>ios-arm64_x86_64-simulator/PointClickSdk.framework/_CodeSignature/CodeResources</key>
 		<dict>
+			<key>hash</key>
+			<data>
+			qAAl+p7657+QvglTOP/VcTQBhz4=
+			</data>
 			<key>hash2</key>
 			<data>
-			a+wOJgXoQ5SGbPkiibPu2azpze/gTvym8TzG/9q+PB8=
+			QgES8zY19JO29irAsXg5LxHIOCvD/fYO/Qz4LKSP8PA=
 			</data>
 		</dict>
 	</dict>
