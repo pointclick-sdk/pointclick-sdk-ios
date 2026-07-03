@@ -19,7 +19,7 @@ AdFit SDK / LevelPlay(IronSource) SDK 를 앱에서 별도로 추가하지 않�
 
 ```swift
 dependencies: [
-    .package(url: "https://github.com/pointclick-sdk/pointclick-sdk-ios.git", from: "1.0.4")
+    .package(url: "https://github.com/pointclick-sdk/pointclick-sdk-ios.git", from: "1.0.5")
 ]
 ```
 
