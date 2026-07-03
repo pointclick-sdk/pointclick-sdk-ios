@@ -11,13 +11,20 @@ PointClick 서비스를 앱에 통합하는 iOS SDK 입니다.
 
 ## Installation
 
-### Swift Package Manager
+Swift Package Manager 로 설치한다. SDK 하나만 추가하면
+카카오 AdFit SDK 와 LevelPlay(IronSource) SDK + 미디에이션 어댑터 7종이 자동 포함된다.
+AdFit SDK / LevelPlay(IronSource) SDK 를 앱에서 별도로 추가하지 않는다. (중복 포함 시 충돌)
+
+**앱 타깃 Other Linker Flags 에 `-ObjC` 추가 필수** — 누락 시 리워드 비디오(미디에이션) 미동작.
 
 ```swift
 dependencies: [
-    .package(url: "https://github.com/pointclick-sdk/pointclick-sdk-ios.git", from: "1.0.3")
+    .package(url: "https://github.com/pointclick-sdk/pointclick-sdk-ios.git", from: "1.0.4")
 ]
 ```
+
+포함 어댑터(7종): AppLovin · BidMachine · Facebook · Fyber · Mintegral · UnityAds · Vungle
+(InMobi · Moloco · Pangle · Smaato · Verve 는 IronSource 가 SPM 어댑터를 제공하지 않아 미포함)
 
 ## API Overview
 

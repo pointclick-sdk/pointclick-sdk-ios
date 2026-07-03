@@ -9,7 +9,10 @@ SwiftUI, UIKit, Objective-C 를 모두 지원합니다.
 
 ## Installation
 
-### Swift Package Manager
+Swift Package Manager 로 설치합니다. SDK 하나만 추가하면
+카카오 AdFit SDK 와 LevelPlay(IronSource) SDK + 미디에이션 어댑터가 자동으로 포함됩니다.
+
+> **AdFit SDK 와 LevelPlay(IronSource) SDK 를 앱에서 별도로 추가하지 마세요.** 중복 포함 시 충돌이 발생합니다.
 
 Xcode → File → Add Package Dependencies 에서 아래 URL 을 추가합니다.
 
@@ -21,9 +24,21 @@ https://github.com/pointclick-sdk/pointclick-sdk-ios
 
 ```swift
 dependencies: [
-    .package(url: "https://github.com/pointclick-sdk/pointclick-sdk-ios.git", from: "1.0.3")
+    .package(url: "https://github.com/pointclick-sdk/pointclick-sdk-ios.git", from: "1.0.4")
 ]
 ```
+
+**⚠️ 필수 — `-ObjC` 링커 플래그 추가**
+
+LevelPlay(IronSource) SDK 의 SPM 제약으로, 앱 타깃에 아래 설정이 필요합니다.
+
+1. Xcode → 앱 타깃 → Build Settings → **Other Linker Flags**
+2. `-ObjC` 추가
+
+이 설정이 없으면 리워드 비디오(미디에이션) 광고가 동작하지 않습니다.
+
+> 포함되는 미디에이션 어댑터(7종): AppLovin · BidMachine · Facebook · Fyber · Mintegral · UnityAds · Vungle
+> (InMobi · Moloco · Pangle · Smaato · Verve 는 IronSource 가 SPM 어댑터를 제공하지 않아 포함되지 않습니다)
 
 ---
 
