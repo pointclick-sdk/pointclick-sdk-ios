@@ -1,0 +1,9 @@
+/* ATT permission dialog */
+"pointclick_att_dialog_title" = "Ad tracking permission is required";
+"pointclick_att_dialog_message" = "To earn rewards smoothly, ad tracking must be allowed on your device. If not allowed, some benefits may be limited.";
+"pointclick_att_go_settings" = "Go to Settings";
+"pointclick_att_close" = "Close";
+
+/* ATT inline view (embedded) */
+"pointclick_att_inline_title" = "App tracking permission is disabled.";
+"pointclick_att_inline_message" = "App tracking permission is disabled, so some point rewards may not be processed correctly.\nPlease allow tracking in [Settings > Privacy & Security > Tracking].";

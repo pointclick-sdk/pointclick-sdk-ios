@@ -125,6 +125,13 @@
       },
       {
         "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "PointClickSdk"
+      },
+      {
+        "kind": "Import",
         "name": "UIKit",
         "printedName": "UIKit",
         "declKind": "Import",
@@ -2454,151 +2461,200 @@
       "value": "14"
     },
     {
-      "filePath": "\/Users\/runner\/work\/pointclick-sdk-ios\/pointclick-sdk-ios\/Sources\/PointClickSdk\/Internal\/Mediation\/LevelPlayAdapter.swift",
+      "filePath": "\/Users\/runner\/work\/pointclick-sdk-ios\/pointclick-sdk-ios\/Sources\/PointClickSdk\/Internal\/Mediation\/AdWhaleAdapter.swift",
       "kind": "StringLiteral",
-      "offset": 481,
-      "length": 42,
-      "value": "\"kr.co.pointclick.sdk.mediation.levelplay\""
+      "offset": 1346,
+      "length": 32,
+      "value": "\"AdWhaleSDK.AdWhaleMediationAds\""
     },
     {
-      "filePath": "\/Users\/runner\/work\/pointclick-sdk-ios\/pointclick-sdk-ios\/Sources\/PointClickSdk\/Internal\/Mediation\/LevelPlayAdapter.swift",
+      "filePath": "\/Users\/runner\/work\/pointclick-sdk-ios\/pointclick-sdk-ios\/Sources\/PointClickSdk\/Internal\/Mediation\/AdWhaleAdapter.swift",
+      "kind": "StringLiteral",
+      "offset": 1414,
+      "length": 37,
+      "value": "\"AdWhaleSDK.AdWhaleMediationRewardAd\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/pointclick-sdk-ios\/pointclick-sdk-ios\/Sources\/PointClickSdk\/Internal\/Mediation\/AdWhaleAdapter.swift",
+      "kind": "Array",
+      "offset": 1660,
+      "length": 317,
+      "value": "[\"AdWhaleAdMobAdapter.AdWhaleAdMobAdapterRegistrar\", \"AdWhaleCaulyAdapter.AdWhaleCaulyAdapterRegistrar\", \"AdWhaleAdFitAdapter.AdWhaleAdFitAdapterRegistrar\", \"AdWhaleAdmizeAdapter.AdWhaleAdmizeAdapterRegistrar\", \"AdWhaleLevelPlayAdapter.AdWhaleLevelPlayAdapterRegistrar\"]"
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/pointclick-sdk-ios\/pointclick-sdk-ios\/Sources\/PointClickSdk\/Internal\/Mediation\/AdWhaleAdapter.swift",
+      "kind": "StringLiteral",
+      "offset": 2024,
+      "length": 40,
+      "value": "\"kr.co.pointclick.sdk.mediation.adwhale\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/pointclick-sdk-ios\/pointclick-sdk-ios\/Sources\/PointClickSdk\/Internal\/Mediation\/AdWhaleAdapter.swift",
       "kind": "Dictionary",
-      "offset": 577,
+      "offset": 2118,
       "length": 3,
       "value": "[]"
     },
     {
-      "filePath": "\/Users\/runner\/work\/pointclick-sdk-ios\/pointclick-sdk-ios\/Sources\/PointClickSdk\/Internal\/Mediation\/LevelPlayAdapter.swift",
+      "filePath": "\/Users\/runner\/work\/pointclick-sdk-ios\/pointclick-sdk-ios\/Sources\/PointClickSdk\/Internal\/Mediation\/AdWhaleAdapter.swift",
       "kind": "Array",
-      "offset": 623,
+      "offset": 2359,
       "length": 2,
       "value": "[]"
     },
     {
-      "filePath": "\/Users\/runner\/work\/pointclick-sdk-ios\/pointclick-sdk-ios\/Sources\/PointClickSdk\/Internal\/Mediation\/LevelPlayAdapter.swift",
+      "filePath": "\/Users\/runner\/work\/pointclick-sdk-ios\/pointclick-sdk-ios\/Sources\/PointClickSdk\/Internal\/Mediation\/AdWhaleAdapter.swift",
+      "kind": "Array",
+      "offset": 2404,
+      "length": 2,
+      "value": "[]"
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/pointclick-sdk-ios\/pointclick-sdk-ios\/Sources\/PointClickSdk\/Internal\/Mediation\/AdWhaleAdapter.swift",
       "kind": "Dictionary",
-      "offset": 694,
+      "offset": 2473,
       "length": 3,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/runner\/work\/pointclick-sdk-ios\/pointclick-sdk-ios\/Sources\/PointClickSdk\/Internal\/Mediation\/MediationScriptHandler.swift",
       "kind": "StringLiteral",
-      "offset": 394,
+      "offset": 662,
       "length": 22,
       "value": "\"POINTCLICK_MEDIATION\""
     },
     {
       "filePath": "\/Users\/runner\/work\/pointclick-sdk-ios\/pointclick-sdk-ios\/Sources\/PointClickSdk\/Internal\/Mediation\/MediationScriptHandler.swift",
-      "kind": "StringLiteral",
-      "offset": 456,
-      "length": 11,
-      "value": "\"LEVELPLAY\""
-    },
-    {
-      "filePath": "\/Users\/runner\/work\/pointclick-sdk-ios\/pointclick-sdk-ios\/Sources\/PointClickSdk\/Internal\/Mediation\/MediationScriptHandler.swift",
       "kind": "BooleanLiteral",
-      "offset": 3785,
+      "offset": 4665,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/runner\/work\/pointclick-sdk-ios\/pointclick-sdk-ios\/Sources\/PointClickSdk\/Internal\/Mediation\/ObjCHelper.swift",
       "kind": "StringLiteral",
-      "offset": 685,
+      "offset": 711,
       "length": 7,
       "value": "\"alloc\""
     },
     {
       "filePath": "\/Users\/runner\/work\/pointclick-sdk-ios\/pointclick-sdk-ios\/Sources\/PointClickSdk\/Internal\/Mediation\/ObjCHelper.swift",
+      "kind": "StringLiteral",
+      "offset": 1654,
+      "length": 7,
+      "value": "\"alloc\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/pointclick-sdk-ios\/pointclick-sdk-ios\/Sources\/PointClickSdk\/Internal\/Mediation\/ObjCHelper.swift",
+      "kind": "StringLiteral",
+      "offset": 2009,
+      "length": 6,
+      "value": "\"init\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/pointclick-sdk-ios\/pointclick-sdk-ios\/Sources\/PointClickSdk\/Internal\/Mediation\/ObjCHelper.swift",
       "kind": "IntegerLiteral",
-      "offset": 1686,
+      "offset": 3153,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/runner\/work\/pointclick-sdk-ios\/pointclick-sdk-ios\/Sources\/PointClickSdk\/Internal\/Mediation\/ObjCHelper.swift",
       "kind": "IntegerLiteral",
-      "offset": 1833,
+      "offset": 3300,
       "length": 1,
       "value": "1"
     },
     {
       "filePath": "\/Users\/runner\/work\/pointclick-sdk-ios\/pointclick-sdk-ios\/Sources\/PointClickSdk\/Internal\/Mediation\/ObjCHelper.swift",
       "kind": "IntegerLiteral",
-      "offset": 1983,
+      "offset": 3450,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/runner\/work\/pointclick-sdk-ios\/pointclick-sdk-ios\/Sources\/PointClickSdk\/Internal\/Mediation\/ObjCHelper.swift",
       "kind": "IntegerLiteral",
-      "offset": 2000,
+      "offset": 3467,
       "length": 1,
       "value": "2"
     },
     {
       "filePath": "\/Users\/runner\/work\/pointclick-sdk-ios\/pointclick-sdk-ios\/Sources\/PointClickSdk\/Internal\/Mediation\/ObjCHelper.swift",
       "kind": "IntegerLiteral",
-      "offset": 2161,
+      "offset": 3628,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/runner\/work\/pointclick-sdk-ios\/pointclick-sdk-ios\/Sources\/PointClickSdk\/Internal\/Mediation\/ObjCHelper.swift",
       "kind": "IntegerLiteral",
-      "offset": 2170,
+      "offset": 3637,
       "length": 1,
       "value": "1"
     },
     {
       "filePath": "\/Users\/runner\/work\/pointclick-sdk-ios\/pointclick-sdk-ios\/Sources\/PointClickSdk\/Internal\/Mediation\/ObjCHelper.swift",
       "kind": "IntegerLiteral",
-      "offset": 2573,
+      "offset": 4040,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/runner\/work\/pointclick-sdk-ios\/pointclick-sdk-ios\/Sources\/PointClickSdk\/Internal\/Mediation\/ObjCHelper.swift",
       "kind": "IntegerLiteral",
-      "offset": 2720,
+      "offset": 4187,
       "length": 1,
       "value": "1"
     },
     {
       "filePath": "\/Users\/runner\/work\/pointclick-sdk-ios\/pointclick-sdk-ios\/Sources\/PointClickSdk\/Internal\/Mediation\/ObjCHelper.swift",
       "kind": "IntegerLiteral",
-      "offset": 2870,
+      "offset": 4337,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/runner\/work\/pointclick-sdk-ios\/pointclick-sdk-ios\/Sources\/PointClickSdk\/Internal\/Mediation\/ObjCHelper.swift",
       "kind": "IntegerLiteral",
-      "offset": 2887,
+      "offset": 4354,
       "length": 1,
       "value": "2"
     },
     {
       "filePath": "\/Users\/runner\/work\/pointclick-sdk-ios\/pointclick-sdk-ios\/Sources\/PointClickSdk\/Internal\/Mediation\/ObjCHelper.swift",
       "kind": "IntegerLiteral",
-      "offset": 3048,
+      "offset": 4515,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/runner\/work\/pointclick-sdk-ios\/pointclick-sdk-ios\/Sources\/PointClickSdk\/Internal\/Mediation\/ObjCHelper.swift",
       "kind": "IntegerLiteral",
-      "offset": 3057,
+      "offset": 4524,
       "length": 1,
       "value": "1"
     },
     {
       "filePath": "\/Users\/runner\/work\/pointclick-sdk-ios\/pointclick-sdk-ios\/Sources\/PointClickSdk\/Internal\/Mediation\/ObjCHelper.swift",
       "kind": "BooleanLiteral",
-      "offset": 3350,
+      "offset": 4817,
       "length": 5,
       "value": "false"
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/pointclick-sdk-ios\/pointclick-sdk-ios\/Sources\/PointClickSdk\/Internal\/PCLocalization.swift",
+      "kind": "Array",
+      "offset": 860,
+      "length": 58,
+      "value": "[\"ko\", \"en\", \"ja\", \"zh-Hans\", \"zh-Hant\", \"id\", \"es\", \"pt\"]"
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/pointclick-sdk-ios\/pointclick-sdk-ios\/Sources\/PointClickSdk\/Internal\/PCLocalization.swift",
+      "kind": "StringLiteral",
+      "offset": 1297,
+      "length": 4,
+      "value": "\"en\""
     },
     {
       "filePath": "\/Users\/runner\/work\/pointclick-sdk-ios\/pointclick-sdk-ios\/Sources\/PointClickSdk\/Internal\/Shortcut\/ShortcutScriptHandler.swift",
@@ -2652,14 +2708,14 @@
     {
       "filePath": "\/Users\/runner\/work\/pointclick-sdk-ios\/pointclick-sdk-ios\/Sources\/PointClickSdk\/PointClickUI.swift",
       "kind": "BooleanLiteral",
-      "offset": 15176,
+      "offset": 16219,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/runner\/work\/pointclick-sdk-ios\/pointclick-sdk-ios\/Sources\/PointClickSdk\/PointClickUI.swift",
       "kind": "BooleanLiteral",
-      "offset": 15432,
+      "offset": 16475,
       "length": 5,
       "value": "false"
     },

@@ -1,0 +1,9 @@
+/* ATT permission dialog */
+"pointclick_att_dialog_title" = "需要允許廣告追蹤";
+"pointclick_att_dialog_message" = "為順利獲得獎勵，需要在裝置上允許廣告追蹤。如不允許，部分權益可能會受到限制。";
+"pointclick_att_go_settings" = "前往設定";
+"pointclick_att_close" = "關閉";
+
+/* ATT inline view (embedded) */
+"pointclick_att_inline_title" = "App追蹤權限已關閉。";
+"pointclick_att_inline_message" = "由於App追蹤權限已關閉，部分點數獎勵可能無法正常發放。\n請在[設定 > 隱私權與安全性 > 追蹤]中允許權限。";

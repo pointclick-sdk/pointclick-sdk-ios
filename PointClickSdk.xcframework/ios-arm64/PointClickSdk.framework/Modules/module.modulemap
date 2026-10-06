@@ -1,0 +1,6 @@
+framework module PointClickSdk {
+  umbrella header "PointClickSdk-Swift.h"
+  export *
+
+  module * { export * }
+}

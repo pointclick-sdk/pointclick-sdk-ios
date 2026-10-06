@@ -1,0 +1,9 @@
+/* ATT permission dialog */
+"pointclick_att_dialog_title" = "É necessário permitir o rastreamento de anúncios";
+"pointclick_att_dialog_message" = "Para acumular recompensas sem problemas, é necessário permitir o rastreamento de anúncios no dispositivo. Caso contrário, alguns benefícios podem ser limitados.";
+"pointclick_att_go_settings" = "Ir para Ajustes";
+"pointclick_att_close" = "Fechar";
+
+/* ATT inline view (embedded) */
+"pointclick_att_inline_title" = "A permissão de rastreamento do app está desativada.";
+"pointclick_att_inline_message" = "Como a permissão de rastreamento do app está desativada, alguns pontos podem não ser creditados corretamente.\nPermita o rastreamento em [Ajustes > Privacidade e Segurança > Rastreamento].";

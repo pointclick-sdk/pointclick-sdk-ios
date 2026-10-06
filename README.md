@@ -3,16 +3,25 @@
 PointClick 서비스를 앱에 통합하는 iOS SDK 입니다.
 SwiftUI, UIKit, Objective-C 를 모두 지원합니다.
 
-> **Requirements:** iOS 15.0+ · Swift 5.9+ · Xcode 16.0+
+> **Requirements:** iOS 15.0+, Swift 5.9+, Xcode 16.0+
+>
+> **Privacy manifest:** 이 SDK 는 `PrivacyInfo.xcprivacy` 를 포함합니다.
+> Xcode 가 앱을 아카이브할 때 앱의 개인정보 보고서에 자동으로 합쳐집니다. 별도 설정은 필요 없습니다.
 
 ---
 
 ## Installation
 
-Swift Package Manager 로 설치합니다. SDK 하나만 추가하면
-카카오 AdFit SDK 와 LevelPlay(IronSource) SDK + 미디에이션 어댑터가 자동으로 포함됩니다.
+Swift Package Manager 로 설치합니다.
 
-> **AdFit SDK 와 LevelPlay(IronSource) SDK 를 앱에서 별도로 추가하지 마세요.** 중복 포함 시 충돌이 발생합니다.
+이 SDK 는 **광고 SDK 를 번들하지 않습니다.** 리워드 비디오 미디에이션에 필요한
+AdWhale / AdMob 어댑터와 (선택) AdFit SDK 는 **매체 앱이 직접 SPM 으로 추가**합니다 (아래 목록 참고).
+매체가 이미 사용 중인 광고 SDK 버전을 매체가 직접 관리할 수 있도록 하기 위함입니다.
+
+> 기기 정보 / WebView 호스팅 라이브러리(FSNDeviceInfo, FSNWebView)는 이 SDK 바이너리에
+> **정적으로 포함**되어 있어 매체 앱이 별도로 추가하지 않습니다.
+
+### 1. PointClick SDK 추가
 
 Xcode → File → Add Package Dependencies 에서 아래 URL 을 추가합니다.
 
@@ -24,21 +33,60 @@ https://github.com/pointclick-sdk/pointclick-sdk-ios
 
 ```swift
 dependencies: [
-    .package(url: "https://github.com/pointclick-sdk/pointclick-sdk-ios.git", from: "1.0.5")
+    .package(url: "https://github.com/pointclick-sdk/pointclick-sdk-ios.git", from: "1.0.6")
 ]
 ```
 
-**⚠️ 필수 — `-ObjC` 링커 플래그 추가**
+### 2. 광고 SDK / 미디에이션 어댑터 추가 (매체가 직접)
 
-LevelPlay(IronSource) SDK 의 SPM 제약으로, 앱 타깃에 아래 설정이 필요합니다.
+리워드 비디오 광고를 제공하려면 아래 패키지를 앱 타깃에 함께 추가합니다.
+
+**AdWhale SDK** — `https://github.com/adwhale-sdk/adwhale-sdk-ios`
+
+| Product | 필수 여부 |
+|---------|----------|
+| `AdWhaleSDK` | 필수 |
+| `AdWhaleAdMobAdapter` | 필수 (AdMob 미디에이션) |
+| `AdWhaleCaulyAdapter` | Cauly 네트워크를 쓸 때만 |
+
+**AdMob 미디에이션 네트워크 어댑터** — 아래 8종을 각각 추가합니다.
+
+| Package URL | Product |
+|-------------|---------|
+| `https://github.com/googleads/googleads-mobile-ios-mediation-applovin.git` | `AppLovinAdapterTarget` |
+| `https://github.com/googleads/googleads-mobile-ios-mediation-dtexchange.git` | `DTExchangeAdapterTarget` |
+| `https://github.com/googleads/googleads-mobile-ios-mediation-inmobi.git` | `InMobiAdapterTarget` |
+| `https://github.com/googleads/googleads-mobile-ios-mediation-liftoffmonetize.git` | `LiftoffMonetizeAdapterTarget` |
+| `https://github.com/googleads/googleads-mobile-ios-mediation-mintegral.git` | `MintegralAdapterTarget` |
+| `https://github.com/googleads/googleads-mobile-ios-mediation-moloco.git` | `MolocoAdapterTarget` |
+| `https://github.com/googleads/googleads-mobile-ios-mediation-pangle.git` | `PangleAdapterTarget` |
+| `https://github.com/googleads/googleads-mobile-ios-mediation-unity.git` | `UnityAdapterTarget` |
+
+**AdFit SDK (선택)** — 오퍼월/미디어 WebView 내 AdFit 배너를 네이티브로 렌더링할 때만 추가합니다.
+
+| Package URL | Product |
+|-------------|---------|
+| `https://github.com/adfit/adfit-spm.git` | `AdFitSDK` |
+
+> AdFit 광고를 사용하지 않으면 추가하지 않아도 됩니다. SDK 는 AdFit SDK 를 직접 import 하지 않고 런타임으로만 호출하므로, AdFit 이 없으면 해당 배너 렌더링을 건너뛸 뿐 빌드/동작에는 영향이 없습니다.
+
+### 3. `-ObjC` 링커 플래그 추가 (필수)
+
+AdWhale(AdMob) SDK 가 정적 라이브러리로 제공되어, 앱 타깃에 아래 설정이 필요합니다.
 
 1. Xcode → 앱 타깃 → Build Settings → **Other Linker Flags**
 2. `-ObjC` 추가
 
-이 설정이 없으면 리워드 비디오(미디에이션) 광고가 동작하지 않습니다.
+이 설정이 없으면 AdMob 미디에이션 어댑터가 등록되지 않아 리워드 비디오 광고가 동작하지 않습니다.
 
-> 포함되는 미디에이션 어댑터(7종): AppLovin · BidMachine · Facebook · Fyber · Mintegral · UnityAds · Vungle
-> (InMobi · Moloco · Pangle · Smaato · Verve 는 IronSource 가 SPM 어댑터를 제공하지 않아 포함되지 않습니다)
+### 4. `Info.plist` 에 `GADApplicationIdentifier` 추가 (필수)
+
+AdWhale 은 내부적으로 Google Mobile Ads(AdMob) SDK 를 사용합니다. `Info.plist` 에
+`GADApplicationIdentifier` 키가 없으면 앱이 실행 직후 크래시됩니다
+("The Google Mobile Ads SDK was initialized incorrectly").
+
+> `PUBLISHER_UID` 등 AdWhale 게시자 식별자는 오퍼월 로드 시 웹 런타임에서 주입되므로
+> 앱 측 별도 설정은 필요 없습니다.
 
 ---
 
@@ -86,10 +134,10 @@ ATTrackingManager.requestTrackingAuthorization { _ in
         ) { result in
             switch result {
             case .success:
-                // 초기화 완료 — 이제 SDK 사용 가능
+                // 초기화 완료 - 이제 SDK 사용 가능
                 break
             case .failure(let error):
-                // 초기화 실패 — IDFA 등 수집 실패로 오퍼월 표시 불가
+                // 초기화 실패 - IDFA 등 수집 실패로 오퍼월 표시 불가
                 print("PointClick init failed: \(error)")
             }
         }
@@ -101,27 +149,27 @@ ATTrackingManager.requestTrackingAuthorization { _ in
 ```swift
 import PointClickSdk
 
-// Case 1: 로그인 필수 앱 — userId 를 함께 전달
+// Case 1: 로그인 필수 앱 - userId 를 함께 전달
 PointClick.shared.initialize(appId: "YOUR_APP_ID", userId: "USER_ID") { result in
     switch result {
     case .success:
-        // 초기화 완료 — 이제 registerWebView / show 등 사용 가능
+        // 초기화 완료 - 이제 registerWebView / show 등 사용 가능
         break
     case .failure(let error):
-        // 초기화 실패 — IDFA 등 수집 실패로 오퍼월 표시 불가
+        // 초기화 실패 - IDFA 등 수집 실패로 오퍼월 표시 불가
         print("PointClick init failed: \(error)")
     }
 }
 
-// Case 2: 비로그인 앱 — userId 없이 초기화, 로그인 후 setUser 호출
+// Case 2: 비로그인 앱 - userId 없이 초기화, 로그인 후 setUser 호출
 PointClick.shared.initialize(appId: "YOUR_APP_ID") { result in
     switch result {
     case .success:
-        // 초기화 완료 — userId 가 설정되지 않았으므로 광고 표시 불가
+        // 초기화 완료 - userId 가 설정되지 않았으므로 광고 표시 불가
         // 로그인 완료 후 setUser() 호출 필요
         break
     case .failure(let error):
-        // 초기화 실패 — IDFA 등 수집 실패로 오퍼월 표시 불가
+        // 초기화 실패 - IDFA 등 수집 실패로 오퍼월 표시 불가
         print("PointClick init failed: \(error)")
     }
 }
@@ -135,10 +183,10 @@ PointClick.shared.initialize(
 ) { result in
     switch result {
     case .success:
-        // 초기화 완료 — 이제 SDK 사용 가능
+        // 초기화 완료 - 이제 SDK 사용 가능
         break
     case .failure(let error):
-        // 초기화 실패 — IDFA 등 수집 실패로 오퍼월 표시 불가
+        // 초기화 실패 - IDFA 등 수집 실패로 오퍼월 표시 불가
         print("PointClick init failed: \(error)")
     }
 }
@@ -155,7 +203,7 @@ PointClick.shared.initialize(
     if (error == nil) {
         // 초기화 완료
     } else {
-        // 초기화 실패 — 오퍼월 표시 불가
+        // 초기화 실패 - 오퍼월 표시 불가
     }
 }];
 
@@ -163,9 +211,9 @@ PointClick.shared.initialize(
 [[PCPointClick shared] initializeWithAppId:@"YOUR_APP_ID"
                                 completion:^(NSError * _Nullable error) {
     if (error == nil) {
-        // 초기화 완료 — 로그인 후 setUser 호출 필요
+        // 초기화 완료 - 로그인 후 setUser 호출 필요
     } else {
-        // 초기화 실패 — 오퍼월 표시 불가
+        // 초기화 실패 - 오퍼월 표시 불가
     }
 }];
 
@@ -176,9 +224,9 @@ PointClick.shared.initialize(
                                  birthYear:1990
                                 completion:^(NSError * _Nullable error) {
     if (error == nil) {
-        // 초기화 완료 — 이제 SDK 사용 가능
+        // 초기화 완료 - 이제 SDK 사용 가능
     } else {
-        // 초기화 실패 — 오퍼월 표시 불가
+        // 초기화 실패 - 오퍼월 표시 불가
     }
 }];
 ```
@@ -186,12 +234,12 @@ PointClick.shared.initialize(
 | 구분 | 파라미터 | 설명 |
 |------|---------|------|
 | 필수 | `appId` | 앱 고유 식별자 |
-| 선택* | `userId` | 사용자 고유 식별자. `initialize` 시에는 생략 가능하나, **오퍼월·Shortcut 사용 전에는 반드시 설정되어 있어야 합니다.** 비로그인 앱은 생략 후 로그인 시 `setUser` 로 설정 |
+| 선택* | `userId` | 사용자 고유 식별자. `initialize` 시에는 생략 가능하나, **오퍼월과 Shortcut 사용 전에는 반드시 설정되어 있어야 합니다.** 비로그인 앱은 생략 후 로그인 시 `setUser` 로 설정 |
 | 선택 | `gender` | `.male` 또는 `.female` |
 | 선택 | `birthYear` | 출생 연도 (YYYY) |
 | 선택 | `completion` | 초기화 결과 콜백. 성공 시 .success, 실패 시 .failure(error). 항상 메인 스레드에서 호출 |
 
-`*` `userId` 는 초기화 시 생략할 수 있으나, 오퍼월·Shortcut 을 사용하려면 `initialize` 또는 `setUser` 로 반드시 설정되어 있어야 합니다. 미설정 시 오퍼월/Shortcut 은 에러 로그와 함께 동작하지 않습니다.
+`*` `userId` 는 초기화 시 생략할 수 있으나, 오퍼월과 Shortcut 을 사용하려면 `initialize` 또는 `setUser` 로 반드시 설정되어 있어야 합니다. 미설정 시 오퍼월/Shortcut 은 에러 로그와 함께 동작하지 않습니다.
 
 > ATT 권한이 거부되면 오퍼월 광고가 표시되지 않습니다. 리워드 광고 제공을 위해 광고 추적 허용이 필요합니다.
 
@@ -206,7 +254,7 @@ PointClick.shared.initialize(
 
 **Swift:**
 ```swift
-// 로그인 완료 시 — 반드시 isInitialized 확인 후 호출
+// 로그인 완료 시 - 반드시 isInitialized 확인 후 호출
 guard PointClick.shared.isInitialized else { return }
 PointClick.shared.setUser(userId: "USER_ID")
 
@@ -216,7 +264,7 @@ PointClick.shared.setUser(userId: "USER_ID", gender: .female, birthYear: 1995)
 
 **Objective-C:**
 ```objc
-// 로그인 완료 시 — 반드시 isInitialized 확인 후 호출
+// 로그인 완료 시 - 반드시 isInitialized 확인 후 호출
 if ([PCPointClick shared].isInitialized) {
     [[PCPointClick shared] setUserWithUserId:@"USER_ID"];
 }
@@ -227,7 +275,7 @@ if ([PCPointClick shared].isInitialized) {
 
 **로그아웃 (clearUser)**
 
-로그아웃 시 `clearUser` 를 호출하여 사용자 정보를 초기화합니다. 이후 `userId` 가 없어 오퍼월·Shortcut 은 차단됩니다.
+로그아웃 시 `clearUser` 를 호출하여 사용자 정보를 초기화합니다. 이후 `userId` 가 없어 오퍼월과 Shortcut 은 차단됩니다.
 
 ```swift
 // Swift
@@ -295,18 +343,18 @@ struct ContentView: View {
             }
         }
         .onAppear {
-            // 1. ATT 권한 요청 (화면 표시 후 0.5초 딜레이 — Apple 권장)
+            // 1. ATT 권한 요청 (화면 표시 후 0.5초 딜레이 - Apple 권장)
             DispatchQueue.main.asyncAfter(deadline: .now() + 0.5) {
                 ATTrackingManager.requestTrackingAuthorization { _ in
                     DispatchQueue.main.async {
-                        // 2. SDK 초기화 — completion 에서 UI 전환
+                        // 2. SDK 초기화 - completion 에서 UI 전환
                         PointClick.shared.initialize(
                             appId: "YOUR_APP_ID",
                             userId: "user123"
                         ) { result in
                             switch result {
                             case .success:
-                                // 3. 초기화 완료 — 이 시점부터 SDK 사용 가능
+                                // 3. 초기화 완료 - 이 시점부터 SDK 사용 가능
                                 isSDKReady = true
                             case .failure(let error):
                                 // 초기화 실패 처리 (재시도/에러 UI 등)
@@ -341,10 +389,10 @@ class ViewController: UIViewController {
                 ) { result in
                     switch result {
                     case .success:
-                        // 3. 초기화 완료 — completion 안에서 UI 표시
+                        // 3. 초기화 완료 - completion 안에서 UI 표시
                         PointClickUI().show(on: self)
                     case .failure(let error):
-                        // 초기화 실패 — IDFA 등 수집 실패로 오퍼월 표시 불가
+                        // 초기화 실패 - IDFA 등 수집 실패로 오퍼월 표시 불가
                         print("PointClick init failed: \(error)")
                     }
                 }
@@ -370,11 +418,11 @@ class ViewController: UIViewController {
                                                 userId:@"user123"
                                             completion:^(NSError * _Nullable error) {
                 if (error == nil) {
-                    // 3. 초기화 완료 — completion 안에서 UI 표시
+                    // 3. 초기화 완료 - completion 안에서 UI 표시
                     PCPointClickUI *ui = [[PCPointClickUI alloc] init];
                     [ui showOn:self];
                 } else {
-                    // 초기화 실패 — 오퍼월 표시 불가
+                    // 초기화 실패 - 오퍼월 표시 불가
                 }
             }];
         });
@@ -395,11 +443,11 @@ import PointClickSdk
 PointClick.shared.initialize(appId: "YOUR_APP_ID") { result in
     switch result {
     case .success:
-        // 초기화 완료 — 아직 userId 없으므로 광고 표시 불가
+        // 초기화 완료 - 아직 userId 없으므로 광고 표시 불가
         // 이 시점부터 setUser 호출 가능
         break
     case .failure(let error):
-        // 초기화 실패 — IDFA 등 수집 실패로 오퍼월 표시 불가
+        // 초기화 실패 - IDFA 등 수집 실패로 오퍼월 표시 불가
         print("PointClick init failed: \(error)")
     }
 }
@@ -424,10 +472,10 @@ pointClickUI.show(on: self)
 [[PCPointClick shared] initializeWithAppId:@"YOUR_APP_ID"
                                 completion:^(NSError * _Nullable error) {
     if (error == nil) {
-        // 초기화 완료 — 아직 userId 없으므로 광고 표시 불가
+        // 초기화 완료 - 아직 userId 없으므로 광고 표시 불가
         // 이 시점부터 setUser 호출 가능
     } else {
-        // 초기화 실패 — 오퍼월 표시 불가
+        // 초기화 실패 - 오퍼월 표시 불가
     }
 }];
 

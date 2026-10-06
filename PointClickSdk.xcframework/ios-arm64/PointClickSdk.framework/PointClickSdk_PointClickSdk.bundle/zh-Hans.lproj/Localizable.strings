@@ -1,0 +1,9 @@
+/* ATT permission dialog */
+"pointclick_att_dialog_title" = "需要允许广告跟踪";
+"pointclick_att_dialog_message" = "为顺利获得奖励，需要在设备上允许广告跟踪。如不允许，部分权益可能会受到限制。";
+"pointclick_att_go_settings" = "前往设置";
+"pointclick_att_close" = "关闭";
+
+/* ATT inline view (embedded) */
+"pointclick_att_inline_title" = "应用跟踪权限已关闭。";
+"pointclick_att_inline_message" = "由于应用跟踪权限已关闭，部分积分奖励可能无法正常发放。\n请在[设置 > 隐私与安全性 > 跟踪]中允许权限。";

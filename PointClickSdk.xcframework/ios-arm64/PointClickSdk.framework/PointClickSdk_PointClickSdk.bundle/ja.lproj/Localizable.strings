@@ -1,0 +1,9 @@
+/* ATT permission dialog */
+"pointclick_att_dialog_title" = "広告トラッキングの許可が必要です";
+"pointclick_att_dialog_message" = "リワードを正常に獲得するには、端末の広告トラッキングの許可が必要です。許可しない場合、一部の特典が制限されることがあります。";
+"pointclick_att_go_settings" = "設定へ移動";
+"pointclick_att_close" = "閉じる";
+
+/* ATT inline view (embedded) */
+"pointclick_att_inline_title" = "アプリのトラッキング許可が無効になっています。";
+"pointclick_att_inline_message" = "アプリのトラッキング許可が無効になっているため、一部のポイント獲得が正常に処理されない場合があります。\n[設定 > プライバシーとセキュリティ > トラッキング]で許可してください。";

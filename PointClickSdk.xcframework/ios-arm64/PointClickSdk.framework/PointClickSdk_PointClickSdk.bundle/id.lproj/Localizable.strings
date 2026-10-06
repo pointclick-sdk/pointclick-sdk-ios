@@ -1,0 +1,9 @@
+/* ATT permission dialog */
+"pointclick_att_dialog_title" = "Izin pelacakan iklan diperlukan";
+"pointclick_att_dialog_message" = "Untuk memperoleh reward dengan lancar, pelacakan iklan harus diizinkan di perangkat Anda. Jika tidak diizinkan, sebagian benefit mungkin dibatasi.";
+"pointclick_att_go_settings" = "Buka Pengaturan";
+"pointclick_att_close" = "Tutup";
+
+/* ATT inline view (embedded) */
+"pointclick_att_inline_title" = "Izin pelacakan aplikasi dinonaktifkan.";
+"pointclick_att_inline_message" = "Karena izin pelacakan aplikasi dinonaktifkan, sebagian perolehan poin mungkin tidak diproses dengan benar.\nIzinkan pelacakan di [Pengaturan > Privasi & Keamanan > Pelacakan].";
